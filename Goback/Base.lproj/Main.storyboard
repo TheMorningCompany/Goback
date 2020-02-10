@@ -44,9 +44,6 @@
                             <constraint firstItem="LHq-Ba-f3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cce-Pk-vDC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="ABC-dS-kbW" appends="YES" id="hJm-xj-d8z"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="list.bullet" catalog="system" id="yDw-R3-jlW"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="fM7-Jj-NND">
@@ -59,9 +56,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="ABC-dS-kbW"/>
             </objects>
-            <point key="canvasLocation" x="4356" y="976"/>
+            <point key="canvasLocation" x="4355.625" y="975"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ix7-9b-Zy5">
@@ -77,31 +73,29 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YP8-2G-70r"/>
-                        <segue destination="dwa-nS-oNV" kind="relationship" relationship="viewControllers" id="w6f-5p-IT8"/>
-                        <segue destination="kw3-TM-8FL" kind="relationship" relationship="viewControllers" id="zKG-V5-O2k"/>
+                        <segue destination="dwa-nS-oNV" kind="relationship" relationship="viewControllers" id="cey-O1-UIT"/>
+                        <segue destination="nxc-CZ-IXq" kind="relationship" relationship="viewControllers" id="vJq-Fn-7kz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZY-0k-QKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3212" y="975"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="AhV-op-OhV">
+        <!--Notes-->
+        <scene sceneID="31p-2Q-MxP">
             <objects>
-                <viewController id="kw3-TM-8FL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lN4-yK-Wtn">
+                <viewController title="Notes" id="nxc-CZ-IXq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="na7-pF-afi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
-                        <viewLayoutGuide key="safeArea" id="GP1-Jv-Ro8"/>
+                        <viewLayoutGuide key="safeArea" id="xWi-Zd-7ig"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="Rt1-eN-l8N">
-                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="pencil.and.outline" catalog="system" id="bNd-og-7rk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rch-P6-qXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhS-G6-cZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4356" y="120"/>
+            <point key="canvasLocation" x="5287" y="524"/>
         </scene>
         <!--Add Controller-->
         <scene sceneID="0tv-AY-Snu">
@@ -114,7 +108,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="add something" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1E2-Pa-pLx">
                                 <rect key="frame" x="25" y="212" width="270" height="44"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQi-EU-CwA">
                                 <rect key="frame" x="26" y="264" width="268" height="117.5"/>
@@ -140,7 +134,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DHe-5f-G21"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus.circle" catalog="system" id="rPX-3J-NhJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="text.badge.plus" catalog="system" id="rPX-3J-NhJ"/>
                     <navigationItem key="navigationItem" id="hed-HV-18E"/>
                     <connections>
                         <outlet property="textField" destination="1E2-Pa-pLx" id="sYy-3Q-3fU"/>
@@ -154,9 +148,10 @@
     <resources>
         <image name="AddButton" width="959" height="420"/>
         <image name="AddButtonPressed" width="959" height="420"/>
-        <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
+        <image name="text.badge.plus" catalog="system" width="64" height="54"/>
         <namedColor name="BG">
             <color red="1" green="0.99299997091293335" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
