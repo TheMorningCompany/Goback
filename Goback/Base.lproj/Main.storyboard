@@ -138,6 +138,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="plus.circle" catalog="system" id="rPX-3J-NhJ"/>
                     <navigationItem key="navigationItem" id="hed-HV-18E"/>
+                    <connections>
+                        <outlet property="textField" destination="1E2-Pa-pLx" id="sYy-3Q-3fU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBo-RM-csV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,7 +19,7 @@ class AddController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func addButton(_ sender: UIButton) {
-        if textField.text != nil && textField.text != "" {
+        if ((textField.text != nil) && (textField.text != "")) {
             todoList?.append(textField.text!)
             textField.text = ""
             textField.placeholder = "add something"
