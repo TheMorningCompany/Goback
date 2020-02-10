@@ -88,14 +88,29 @@
                     <view key="view" contentMode="scaleToFill" id="na7-pF-afi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="write a note here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-Zg-Dad">
+                                <rect key="frame" x="16" y="20" width="288" height="499"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="hKR-Zg-Dad" firstAttribute="bottom" secondItem="xWi-Zd-7ig" secondAttribute="bottom" id="99K-pj-RqY"/>
+                            <constraint firstItem="hKR-Zg-Dad" firstAttribute="leading" secondItem="xWi-Zd-7ig" secondAttribute="leading" constant="16" id="ebf-Xg-OCP"/>
+                            <constraint firstItem="xWi-Zd-7ig" firstAttribute="trailing" secondItem="hKR-Zg-Dad" secondAttribute="trailing" constant="16" id="gbw-7L-20G"/>
+                            <constraint firstItem="hKR-Zg-Dad" firstAttribute="top" secondItem="xWi-Zd-7ig" secondAttribute="top" constant="20" id="rSB-rk-O5g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xWi-Zd-7ig"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="pencil.and.outline" catalog="system" id="bNd-og-7rk"/>
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="bNd-og-7rk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhS-G6-cZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5287" y="524"/>
+            <point key="canvasLocation" x="4356" y="195"/>
         </scene>
         <!--Add Controller-->
         <scene sceneID="0tv-AY-Snu">
@@ -142,15 +157,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBo-RM-csV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3212" y="121"/>
+            <point key="canvasLocation" x="3212" y="194"/>
         </scene>
     </scenes>
     <resources>
         <image name="AddButton" width="959" height="420"/>
         <image name="AddButtonPressed" width="959" height="420"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
-        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="text.badge.plus" catalog="system" width="64" height="54"/>
         <namedColor name="BG">
             <color red="1" green="0.99299997091293335" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
