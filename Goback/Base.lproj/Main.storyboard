@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-YE-nmS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" name="BG"/>
                                 <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,18 +138,18 @@
             <objects>
                 <viewController id="IOH-JJ-tiT" customClass="NotesAddViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfn-Yi-idG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="brT-ZE-Hbi">
-                                <rect key="frame" x="10" y="10" width="394" height="718"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="write a message to yourself" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="brT-ZE-Hbi">
+                                <rect key="frame" x="10" y="98" width="394" height="635"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aj-6o-S7e">
-                                <rect key="frame" x="68" y="659" width="278" height="118"/>
+                                <rect key="frame" x="68" y="713" width="278" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0aj-6o-S7e" secondAttribute="height" multiplier="92:39" id="t0y-DO-DPe"/>
                                 </constraints>
@@ -177,8 +177,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="RKS-Tw-SaQ"/>
                     <connections>
-                        <outlet property="notesTextView" destination="brT-ZE-Hbi" id="l5j-2P-CEP"/>
-                        <segue destination="nxc-CZ-IXq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="GbO-ku-Bg7"/>
+                        <outlet property="createNoteButton" destination="0aj-6o-S7e" id="7pA-RV-Prx"/>
+                        <outlet property="notesTextView" destination="brT-ZE-Hbi" id="z6h-1O-3QP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4d4-WR-krJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,7 +251,7 @@
         <scene sceneID="rAw-Mg-1d3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TH8-Lw-S6B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="doc.text" catalog="system" id="bNd-og-7rk"/>
+                    <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="bNd-og-7rk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fmG-dE-JJV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -296,7 +296,7 @@
         <image name="AddButtonPressed" width="959" height="420"/>
         <image name="CreateNote" width="959" height="420"/>
         <image name="CreateNotePressed" width="959" height="420"/>
-        <image name="doc.text" catalog="system" width="56" height="64"/>
+        <image name="book" catalog="system" width="64" height="50"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
         <image name="text.badge.plus" catalog="system" width="64" height="54"/>
@@ -304,7 +304,4 @@
             <color red="1" green="0.99199998378753662" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="GbO-ku-Bg7"/>
-    </inferredMetricsTieBreakers>
 </document>
