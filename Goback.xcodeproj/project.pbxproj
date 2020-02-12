@@ -17,6 +17,7 @@
 		00A3165D23F27A0A00ED5ABF /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */; };
 		00A3165F23F27A1500ED5ABF /* NotesAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */; };
 		00DCE95F23F0D6B900686802 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE95E23F0D6B900686802 /* Constants.swift */; };
+		5DB9552123F3B263004FC431 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9551F23F3B262004FC431 /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewController.swift; sourceTree = "<group>"; };
 		00DCE95E23F0D6B900686802 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5DB9552023F3B263004FC431 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */,
+				5DB9551F23F3B262004FC431 /* Notes.xcdatamodeld */,
 				00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */,
 				0001A45423F0CFA400227919 /* AppDelegate.swift */,
 				0001A45623F0CFA400227919 /* SceneDelegate.swift */,
@@ -153,6 +156,7 @@
 				00DCE95F23F0D6B900686802 /* Constants.swift in Sources */,
 				0001A45923F0CFA400227919 /* ViewController.swift in Sources */,
 				0001A45523F0CFA400227919 /* AppDelegate.swift in Sources */,
+				5DB9552123F3B263004FC431 /* Notes.xcdatamodeld in Sources */,
 				00A3165F23F27A1500ED5ABF /* NotesAddViewController.swift in Sources */,
 				0001A45723F0CFA400227919 /* SceneDelegate.swift in Sources */,
 				0001A46B23F0D51300227919 /* AddController.swift in Sources */,
@@ -354,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DB9551F23F3B262004FC431 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DB9552023F3B263004FC431 /* Notes.xcdatamodel */,
+			);
+			currentVersion = 5DB9552023F3B263004FC431 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0001A44923F0CFA400227919 /* Project object */;
 }

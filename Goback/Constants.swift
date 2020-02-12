@@ -9,14 +9,15 @@
 import Foundation
 
 var todoList:[String]?
+var notesList:[String]?
 
 func saveData(todoList:[String]) {
     UserDefaults.standard.set(todoList, forKey: "todoList")
     
 }
 
-func fetchData() -> [String]? {
-    if let todo = UserDefaults.standard.array(forKey: "todoList") as? [String] {
+func fetchData(key: String) -> [String]? {
+    if let todo = UserDefaults.standard.array(forKey: key) as? [String] {
         return todo
     }
     else {

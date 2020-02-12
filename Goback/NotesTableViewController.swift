@@ -8,15 +8,53 @@
 
 import UIKit
 
-class NotesTableViewController: UIViewController {
+class NotesTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            title = "Notes"
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        if let todo = notesList {
+            return todo.count
+        } else {
+            return 0
+        }
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        if let todo = notesList {
+            cell.textLabel?.text = todo[indexPath.row]
+        }
+        return cell
+    }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notesList?.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

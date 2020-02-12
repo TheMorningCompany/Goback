@@ -20,7 +20,10 @@ class AddController: UIViewController {
     }
     @IBAction func addButton(_ sender: UIButton) {
         if ((textField.text != nil) && (textField.text != "")) {
-            todoList?.append(textField.text!)
+            let textToSave = textField.text
+            
+            ListViewController().save(name: textToSave!)
+            
             textField.text = ""
             textField.placeholder = "add something"
         }
