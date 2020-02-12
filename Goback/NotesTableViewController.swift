@@ -75,7 +75,13 @@ class NotesTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            notesList?.remove(at: indexPath.row)
+            context.delete(noteItems[indexPath.row])
+            noteItems.remove(at: indexPath.row)
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save: \(error), \(error.userInfo)")
+            }
             tableView.reloadData()
         }
     }

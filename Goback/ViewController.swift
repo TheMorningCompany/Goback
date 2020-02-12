@@ -67,7 +67,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            todoList?.remove(at: indexPath.row)
+            context.delete(todoItems[indexPath.row])
+            todoItems.remove(at: indexPath.row)
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save: \(error), \(error.userInfo)")
+            }
             tableView.reloadData()
         }
     }
