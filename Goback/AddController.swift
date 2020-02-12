@@ -27,10 +27,5 @@ class AddController: UIViewController {
             textField.text = ""
             textField.placeholder = "add something"
         }
-    
-    
-    
     }
-    
-
 }

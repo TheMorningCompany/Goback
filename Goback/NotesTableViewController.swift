@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NotesTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -17,6 +18,8 @@ class NotesTableViewController: UIViewController, UITableViewDelegate, UITableVi
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
     }
+    
+    var noteItems:[NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,20 +34,42 @@ class NotesTableViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "NotesItem")
+        do {
+            noteItems = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch: \(error), \(error.userInfo)")
+        }
+    }
+    
+    func save(contents: String) {
+        let entity = NSEntityDescription.entity(forEntityName: "NotesItem", in: context)
+        let noteItem = NSManagedObject(entity: entity!, insertInto: context)
+        noteItem.setValue(contents, forKey: "contents")
+        do {
+            try context.save()
+            noteItems.append(noteItem)
+        } catch let error as NSError {
+            print("Could not save: \(error), \(error.userInfo)")
+        }
+    }
+    
+    var context: NSManagedObjectContext! {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        if let todo = notesList {
-            return todo.count
-        } else {
-            return 0
-        }
+        return noteItems.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let noteItem = noteItems[indexPath.row]
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        if let todo = notesList {
-            cell.textLabel?.text = todo[indexPath.row]
-        }
+        cell.textLabel?.text = noteItem.value(forKey: "contents") as! String
         return cell
     }
 

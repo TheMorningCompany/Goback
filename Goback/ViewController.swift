@@ -17,12 +17,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let todo = fetchData(key: "todoList") {
-            todoList = todo
-        } else {
-            todoList = [String]()
-        }
-        
         tableView.delegate = self
         
         tableView.dataSource = self

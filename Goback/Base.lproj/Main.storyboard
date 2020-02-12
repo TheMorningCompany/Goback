@@ -121,7 +121,7 @@
                     <navigationItem key="navigationItem" id="tuK-OL-9lA">
                         <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" id="FjE-Xz-umH">
                             <connections>
-                                <segue destination="IOH-JJ-tiT" kind="show" id="g0U-0l-Tq5"/>
+                                <segue destination="IOH-JJ-tiT" kind="show" id="YHb-vh-zj9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -156,7 +156,7 @@
                                 <state key="normal" image="CreateNote"/>
                                 <state key="highlighted" image="CreateNotePressed"/>
                                 <connections>
-                                    <action selector="createNoteButtonPressed:" destination="IOH-JJ-tiT" eventType="touchUpInside" id="UEf-s4-QZX"/>
+                                    <action selector="createNotesButtonPressed:" destination="IOH-JJ-tiT" eventType="touchUpInside" id="zZE-eX-DCC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,8 +177,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RKS-Tw-SaQ"/>
                     <connections>
-                        <outlet property="createNoteButton" destination="0aj-6o-S7e" id="7pA-RV-Prx"/>
-                        <outlet property="notesTextView" destination="brT-ZE-Hbi" id="z6h-1O-3QP"/>
+                        <outlet property="notesTextView" destination="brT-ZE-Hbi" id="l5j-2P-CEP"/>
                         <segue destination="nxc-CZ-IXq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="GbO-ku-Bg7"/>
                     </connections>
                 </viewController>
@@ -306,7 +305,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g0U-0l-Tq5"/>
         <segue reference="GbO-ku-Bg7"/>
     </inferredMetricsTieBreakers>
 </document>

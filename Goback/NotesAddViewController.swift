@@ -10,13 +10,21 @@ import UIKit
 
 class NotesAddViewController: UIViewController {
 
+    @IBOutlet weak var notesTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func createNotesButtonPressed(_ sender: UIButton) {
+        if ((notesTextView.text != nil) && (notesTextView.text != "")) {
+            let textToSave = notesTextView.text
+            
+            NotesTableViewController().save(contents: textToSave!)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
