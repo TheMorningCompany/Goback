@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqO-yL-4vC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqO-yL-4vC">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -232,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="4151.1999999999998" y="193.85307346326837"/>
         </scene>
-        <!--View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="Gu1-eA-Qc5">
             <objects>
-                <viewController id="RRH-dj-fkl" sceneMemberID="viewController">
+                <viewController id="RRH-dj-fkl" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="McK-at-Ttl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,6 +246,10 @@
                                 <state key="normal" image="Glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapGlyphIcon:" destination="gS0-YU-WJQ" eventType="touchUpInside" id="7yh-d8-cr8"/>
+                                    <action selector="didTapGlyphIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="snf-Jy-NRs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aW-Bw-Fef" userLabel="shadow">
                                 <rect key="frame" x="13" y="302" width="100" height="100"/>
@@ -254,6 +258,10 @@
                                 <state key="normal" image="Shadow">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapShadowIcon:" destination="gS0-YU-WJQ" eventType="touchUpInside" id="7aS-IJ-BuG"/>
+                                    <action selector="didTapShadowIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="DLD-V6-4Er"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TO-1x-fLZ" userLabel="FadeBG">
                                 <rect key="frame" x="207" y="302" width="100" height="100"/>
@@ -261,6 +269,10 @@
                                 <state key="normal" image="Fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapFadeIcon:" destination="gS0-YU-WJQ" eventType="touchUpInside" id="68K-4y-69b"/>
+                                    <action selector="didTapFadeIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="bL8-8V-9n3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O92-2X-g9d" userLabel="light">
                                 <rect key="frame" x="13" y="220" width="100" height="100"/>
@@ -269,6 +281,9 @@
                                 <state key="normal" image="Light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLightIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="TnE-be-GyD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-S9-csj" userLabel="green">
                                 <rect key="frame" x="207" y="220" width="100" height="100"/>
@@ -276,6 +291,10 @@
                                 <state key="normal" image="Green">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapGreenIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="0Wf-4x-WCW"/>
+                                    <action selector="didTapGreenIcon:" destination="gS0-YU-WJQ" eventType="touchUpInside" id="hXC-7z-EeE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-8h-WVC" userLabel="dark">
                                 <rect key="frame" x="110" y="220" width="100" height="100"/>
@@ -286,6 +305,9 @@
                                 <state key="normal" image="Dark">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapDarkIcon:" destination="RRH-dj-fkl" eventType="touchUpInside" id="Ufp-1d-AcM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-Zj-zLh">
                                 <rect key="frame" x="25" y="18" width="107" height="40"/>
@@ -346,6 +368,7 @@
                     <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="mLq-jw-h1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRP-rp-One" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gS0-YU-WJQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5209" y="660"/>
         </scene>
@@ -404,11 +427,11 @@
         <image name="Green" width="100" height="100"/>
         <image name="Light" width="100" height="100"/>
         <image name="Shadow" width="100" height="100"/>
-        <image name="book" catalog="system" width="128" height="101"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="list.bullet" catalog="system" width="128" height="88"/>
-        <image name="plus.circle" catalog="system" width="128" height="121"/>
-        <image name="text.badge.plus" catalog="system" width="128" height="109"/>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="plus.circle" catalog="system" width="64" height="60"/>
+        <image name="text.badge.plus" catalog="system" width="64" height="54"/>
         <namedColor name="BG">
             <color red="1" green="0.99199998378753662" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

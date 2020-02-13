@@ -22,6 +22,7 @@
 		00A3165D23F27A0A00ED5ABF /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */; };
 		00A3165F23F27A1500ED5ABF /* NotesAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */; };
 		00DCE95F23F0D6B900686802 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE95E23F0D6B900686802 /* Constants.swift */; };
+		5D791A5F23F5E7C000C406A6 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D791A5E23F5E7C000C406A6 /* OptionsViewController.swift */; };
 		5DB9552123F3B263004FC431 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9551F23F3B262004FC431 /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewController.swift; sourceTree = "<group>"; };
 		00B79E2123F4924700B5A244 /* Goback.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goback.entitlements; sourceTree = "<group>"; };
 		00DCE95E23F0D6B900686802 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5D791A5E23F5E7C000C406A6 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5DB9552023F3B263004FC431 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				00DCE95E23F0D6B900686802 /* Constants.swift */,
 				0001A45823F0CFA400227919 /* ViewController.swift */,
 				0001A45A23F0CFA400227919 /* Main.storyboard */,
+				5D791A5E23F5E7C000C406A6 /* OptionsViewController.swift */,
 				0001A45D23F0CFA400227919 /* Assets.xcassets */,
 				0001A45F23F0CFA400227919 /* LaunchScreen.storyboard */,
 				0001A46223F0CFA400227919 /* Info.plist */,
@@ -186,6 +189,7 @@
 				00DCE95F23F0D6B900686802 /* Constants.swift in Sources */,
 				0001A45923F0CFA400227919 /* ViewController.swift in Sources */,
 				0001A45523F0CFA400227919 /* AppDelegate.swift in Sources */,
+				5D791A5F23F5E7C000C406A6 /* OptionsViewController.swift in Sources */,
 				5DB9552123F3B263004FC431 /* Notes.xcdatamodeld in Sources */,
 				00A3165F23F27A1500ED5ABF /* NotesAddViewController.swift in Sources */,
 				0001A45723F0CFA400227919 /* SceneDelegate.swift in Sources */,
