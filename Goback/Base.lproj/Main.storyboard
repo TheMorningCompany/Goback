@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqO-yL-4vC">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LHq-Ba-f3x">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                                 <color key="backgroundColor" name="BG"/>
                                 <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="sectionIndexBackgroundColor" name="BG"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bTl-Hc-19e">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="374" height="44"/>
+                                        <rect key="frame" x="15" y="55.5" width="290" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bTl-Hc-19e" id="Yic-ru-p8p">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
@@ -76,6 +76,7 @@
                     <connections>
                         <segue destination="nYL-LZ-8le" kind="relationship" relationship="viewControllers" id="YP8-2G-70r"/>
                         <segue destination="TH8-Lw-S6B" kind="relationship" relationship="viewControllers" id="vJq-Fn-7kz"/>
+                        <segue destination="RRH-dj-fkl" kind="relationship" relationship="viewControllers" id="fv8-Gd-Nlb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZY-0k-QKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,20 +88,20 @@
             <objects>
                 <viewController id="nxc-CZ-IXq" customClass="NotesTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="na7-pF-afi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-YE-nmS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
                                 <color key="backgroundColor" name="BG"/>
                                 <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uzb-iv-PMr">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="374" height="44"/>
+                                        <rect key="frame" x="15" y="55.5" width="290" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uzb-iv-PMr" id="xzA-5X-Zc9">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
@@ -138,18 +139,18 @@
             <objects>
                 <viewController id="IOH-JJ-tiT" customClass="NotesAddViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfn-Yi-idG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="write a message to yourself" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="brT-ZE-Hbi">
-                                <rect key="frame" x="10" y="98" width="394" height="635"/>
+                                <rect key="frame" x="10" y="54" width="300" height="385"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aj-6o-S7e">
-                                <rect key="frame" x="68" y="713" width="278" height="118"/>
+                                <rect key="frame" x="68" y="425" width="184" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0aj-6o-S7e" secondAttribute="height" multiplier="92:39" id="t0y-DO-DPe"/>
                                 </constraints>
@@ -189,16 +190,16 @@
             <objects>
                 <viewController id="dwa-nS-oNV" customClass="AddController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YmZ-8T-ymd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="add something" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1E2-Pa-pLx">
-                                <rect key="frame" x="25" y="376" width="364" height="44"/>
+                                <rect key="frame" x="25" y="212" width="270" height="44"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQi-EU-CwA">
-                                <rect key="frame" x="26" y="428" width="362" height="158.66666666666663"/>
+                                <rect key="frame" x="26" y="264" width="268" height="117.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gQi-EU-CwA" secondAttribute="height" multiplier="137:60" id="bKs-0M-G04"/>
                                 </constraints>
@@ -231,6 +232,143 @@
             </objects>
             <point key="canvasLocation" x="4151.1999999999998" y="193.85307346326837"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Gu1-eA-Qc5">
+            <objects>
+                <viewController id="RRH-dj-fkl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="McK-at-Ttl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-8L-o0d" userLabel="fade">
+                                <rect key="frame" x="110" y="383" width="100" height="100"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" image="Glyph">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aW-Bw-Fef" userLabel="shadow">
+                                <rect key="frame" x="13" y="383" width="100" height="100"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="Shadow">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TO-1x-fLZ" userLabel="FadeBG">
+                                <rect key="frame" x="207" y="383" width="100" height="100"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" image="Fade">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O92-2X-g9d" userLabel="light">
+                                <rect key="frame" x="13" y="301" width="100" height="100"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" image="Light">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-S9-csj" userLabel="green">
+                                <rect key="frame" x="207" y="301" width="100" height="100"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" image="Green">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-8h-WVC" userLabel="dark">
+                                <rect key="frame" x="110" y="301" width="100" height="100"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="Dark">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-Zj-zLh">
+                                <rect key="frame" x="25" y="18" width="107" height="40"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYg-QM-gbB">
+                                <rect key="frame" x="25" y="247" width="122" height="40"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mof-M0-DD9">
+                                <rect key="frame" x="25" y="151" width="122" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="button option 2">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43K-7r-buf">
+                                <rect key="frame" x="25" y="105" width="122" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="button option 1">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4U-7Q-T6i">
+                                <rect key="frame" x="25" y="197" width="86" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="how to use">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invert number pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-et-0R2">
+                                <rect key="frame" x="25" y="70" width="146" height="23"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9aW-Bw-Fef" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="13" id="0SJ-uK-NwK"/>
+                            <constraint firstItem="mof-M0-DD9" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="0hC-OZ-ml2"/>
+                            <constraint firstItem="JYg-QM-gbB" firstAttribute="top" secondItem="w4U-7Q-T6i" secondAttribute="bottom" constant="14" id="3Tn-Rq-y4b"/>
+                            <constraint firstItem="O92-2X-g9d" firstAttribute="top" secondItem="JYg-QM-gbB" secondAttribute="bottom" constant="14" id="79K-Xk-ueL"/>
+                            <constraint firstItem="FdL-S9-csj" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="8UH-id-DDC"/>
+                            <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerX" secondItem="McK-at-Ttl" secondAttribute="centerX" id="8aj-RJ-6tH"/>
+                            <constraint firstItem="Swt-gq-Omm" firstAttribute="trailing" secondItem="FdL-S9-csj" secondAttribute="trailing" constant="13" id="AJI-Ae-tyh"/>
+                            <constraint firstItem="43K-7r-buf" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="E8P-KR-cZL"/>
+                            <constraint firstItem="cgg-8L-o0d" firstAttribute="centerY" secondItem="9aW-Bw-Fef" secondAttribute="centerY" id="Iyb-Ug-BjK"/>
+                            <constraint firstItem="mof-M0-DD9" firstAttribute="top" secondItem="43K-7r-buf" secondAttribute="bottom" constant="10" id="Nd2-rV-NOK"/>
+                            <constraint firstItem="9aW-Bw-Fef" firstAttribute="top" secondItem="O92-2X-g9d" secondAttribute="bottom" constant="-18" id="Quz-vk-nXt"/>
+                            <constraint firstItem="hy2-et-0R2" firstAttribute="top" secondItem="EVU-Zj-zLh" secondAttribute="bottom" constant="12" id="SVa-rI-k6y"/>
+                            <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="T0J-Py-g7a"/>
+                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="Ueo-vV-bq7"/>
+                            <constraint firstItem="43K-7r-buf" firstAttribute="top" secondItem="hy2-et-0R2" secondAttribute="bottom" constant="12" id="Xi7-ED-MOX"/>
+                            <constraint firstItem="mof-M0-DD9" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="ard-X6-2iK"/>
+                            <constraint firstItem="JYg-QM-gbB" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="25" id="auq-YF-wD0"/>
+                            <constraint firstItem="EVU-Zj-zLh" firstAttribute="top" secondItem="Swt-gq-Omm" secondAttribute="top" constant="18" id="aze-wi-7j1"/>
+                            <constraint firstItem="43K-7r-buf" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="bS8-4N-SiE"/>
+                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="dEb-0N-v6o"/>
+                            <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="gVI-zv-bel"/>
+                            <constraint firstItem="O92-2X-g9d" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="13" id="hbl-qw-y7e"/>
+                            <constraint firstItem="hy2-et-0R2" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="hqn-ui-utg"/>
+                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="top" secondItem="mof-M0-DD9" secondAttribute="bottom" constant="10" id="hzb-9P-DIb"/>
+                            <constraint firstItem="FdL-S9-csj" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="iPo-Sj-nQE"/>
+                            <constraint firstItem="Swt-gq-Omm" firstAttribute="trailing" secondItem="6TO-1x-fLZ" secondAttribute="trailing" constant="13" id="mvP-AE-zHC"/>
+                            <constraint firstItem="cgg-8L-o0d" firstAttribute="centerX" secondItem="McK-at-Ttl" secondAttribute="centerX" id="qtZ-M4-FK2"/>
+                            <constraint firstItem="EVU-Zj-zLh" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="25" id="sfS-Oe-2l1"/>
+                            <constraint firstItem="6TO-1x-fLZ" firstAttribute="centerY" secondItem="9aW-Bw-Fef" secondAttribute="centerY" id="uGR-y4-hNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Swt-gq-Omm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="mLq-jw-h1D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRP-rp-One" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5209" y="660"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rAw-Mg-1d3">
             <objects>
@@ -238,7 +376,7 @@
                     <tabBarItem key="tabBarItem" title="" image="book" catalog="system" id="bNd-og-7rk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fmG-dE-JJV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -260,7 +398,7 @@
                     <tabBarItem key="tabBarItem" title="" image="list.bullet" catalog="system" id="yDw-R3-jlW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tLa-2N-8pp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="barTintColor" name="BG"/>
@@ -280,7 +418,14 @@
         <image name="AddButtonPressed" width="959" height="420"/>
         <image name="CreateNote" width="959" height="420"/>
         <image name="CreateNotePressed" width="959" height="420"/>
+        <image name="Dark" width="100" height="100"/>
+        <image name="Fade" width="100" height="100"/>
+        <image name="Glyph" width="100" height="100"/>
+        <image name="Green" width="100" height="100"/>
+        <image name="Light" width="100" height="100"/>
+        <image name="Shadow" width="100" height="100"/>
         <image name="book" catalog="system" width="128" height="101"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="text.badge.plus" catalog="system" width="128" height="109"/>

@@ -14,6 +14,11 @@
 		0001A45E23F0CFA400227919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0001A45D23F0CFA400227919 /* Assets.xcassets */; };
 		0001A46123F0CFA400227919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001A45F23F0CFA400227919 /* LaunchScreen.storyboard */; };
 		0001A46B23F0D51300227919 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A46A23F0D51300227919 /* AddController.swift */; };
+		0023109023F5126900BE3633 /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0023108B23F5126800BE3633 /* glyph@2x.png */; };
+		0023109123F5126900BE3633 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0023108C23F5126900BE3633 /* green@2x.png */; };
+		0023109223F5126900BE3633 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0023108D23F5126900BE3633 /* shadow@2x.png */; };
+		0023109323F5126900BE3633 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0023108E23F5126900BE3633 /* fade@2x.png */; };
+		0023109423F5126900BE3633 /* dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0023108F23F5126900BE3633 /* dark@2x.png */; };
 		00A3165D23F27A0A00ED5ABF /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */; };
 		00A3165F23F27A1500ED5ABF /* NotesAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */; };
 		00DCE95F23F0D6B900686802 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DCE95E23F0D6B900686802 /* Constants.swift */; };
@@ -30,6 +35,11 @@
 		0001A46023F0CFA400227919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0001A46223F0CFA400227919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0001A46A23F0D51300227919 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		0023108B23F5126800BE3633 /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
+		0023108C23F5126900BE3633 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
+		0023108D23F5126900BE3633 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
+		0023108E23F5126900BE3633 /* fade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fade@2x.png"; sourceTree = "<group>"; };
+		0023108F23F5126900BE3633 /* dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark@2x.png"; sourceTree = "<group>"; };
 		00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		00A3165E23F27A1500ED5ABF /* NotesAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewController.swift; sourceTree = "<group>"; };
 		00B79E2123F4924700B5A244 /* Goback.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goback.entitlements; sourceTree = "<group>"; };
@@ -67,6 +77,7 @@
 		0001A45323F0CFA400227919 /* Goback */ = {
 			isa = PBXGroup;
 			children = (
+				0023108A23F5125E00BE3633 /* AltIcons */,
 				00B79E2123F4924700B5A244 /* Goback.entitlements */,
 				00A3165C23F27A0A00ED5ABF /* NotesTableViewController.swift */,
 				5DB9551F23F3B262004FC431 /* Notes.xcdatamodeld */,
@@ -82,6 +93,18 @@
 				0001A46223F0CFA400227919 /* Info.plist */,
 			);
 			path = Goback;
+			sourceTree = "<group>";
+		};
+		0023108A23F5125E00BE3633 /* AltIcons */ = {
+			isa = PBXGroup;
+			children = (
+				0023108F23F5126900BE3633 /* dark@2x.png */,
+				0023108E23F5126900BE3633 /* fade@2x.png */,
+				0023108B23F5126800BE3633 /* glyph@2x.png */,
+				0023108C23F5126900BE3633 /* green@2x.png */,
+				0023108D23F5126900BE3633 /* shadow@2x.png */,
+			);
+			path = AltIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0001A46123F0CFA400227919 /* LaunchScreen.storyboard in Resources */,
+				0023109123F5126900BE3633 /* green@2x.png in Resources */,
+				0023109423F5126900BE3633 /* dark@2x.png in Resources */,
+				0023109223F5126900BE3633 /* shadow@2x.png in Resources */,
+				0023109023F5126900BE3633 /* glyph@2x.png in Resources */,
+				0023109323F5126900BE3633 /* fade@2x.png in Resources */,
 				0001A45E23F0CFA400227919 /* Assets.xcassets in Resources */,
 				0001A45C23F0CFA400227919 /* Main.storyboard in Resources */,
 			);
