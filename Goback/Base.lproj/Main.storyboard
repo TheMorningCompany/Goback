@@ -241,14 +241,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-8L-o0d" userLabel="fade">
-                                <rect key="frame" x="110" y="383" width="100" height="100"/>
+                                <rect key="frame" x="110" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aW-Bw-Fef" userLabel="shadow">
-                                <rect key="frame" x="13" y="383" width="100" height="100"/>
+                                <rect key="frame" x="13" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="Shadow">
@@ -256,14 +256,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TO-1x-fLZ" userLabel="FadeBG">
-                                <rect key="frame" x="207" y="383" width="100" height="100"/>
+                                <rect key="frame" x="207" y="302" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O92-2X-g9d" userLabel="light">
-                                <rect key="frame" x="13" y="301" width="100" height="100"/>
+                                <rect key="frame" x="13" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Light">
@@ -271,14 +271,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-S9-csj" userLabel="green">
-                                <rect key="frame" x="207" y="301" width="100" height="100"/>
+                                <rect key="frame" x="207" y="220" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Green">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-8h-WVC" userLabel="dark">
-                                <rect key="frame" x="110" y="301" width="100" height="100"/>
+                                <rect key="frame" x="110" y="220" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -295,66 +295,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYg-QM-gbB">
-                                <rect key="frame" x="25" y="247" width="122" height="40"/>
+                                <rect key="frame" x="25" y="166" width="122" height="40"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mof-M0-DD9">
-                                <rect key="frame" x="25" y="151" width="122" height="36"/>
+                                <rect key="frame" x="25" y="116" width="122" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="button option 2">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43K-7r-buf">
-                                <rect key="frame" x="25" y="105" width="122" height="36"/>
+                                <rect key="frame" x="25" y="70" width="122" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="button option 1">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4U-7Q-T6i">
-                                <rect key="frame" x="25" y="197" width="86" height="36"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="how to use">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invert number pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-et-0R2">
-                                <rect key="frame" x="25" y="70" width="146" height="23"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9aW-Bw-Fef" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="13" id="0SJ-uK-NwK"/>
                             <constraint firstItem="mof-M0-DD9" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="0hC-OZ-ml2"/>
-                            <constraint firstItem="JYg-QM-gbB" firstAttribute="top" secondItem="w4U-7Q-T6i" secondAttribute="bottom" constant="14" id="3Tn-Rq-y4b"/>
                             <constraint firstItem="O92-2X-g9d" firstAttribute="top" secondItem="JYg-QM-gbB" secondAttribute="bottom" constant="14" id="79K-Xk-ueL"/>
                             <constraint firstItem="FdL-S9-csj" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="8UH-id-DDC"/>
                             <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerX" secondItem="McK-at-Ttl" secondAttribute="centerX" id="8aj-RJ-6tH"/>
                             <constraint firstItem="Swt-gq-Omm" firstAttribute="trailing" secondItem="FdL-S9-csj" secondAttribute="trailing" constant="13" id="AJI-Ae-tyh"/>
-                            <constraint firstItem="43K-7r-buf" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="E8P-KR-cZL"/>
+                            <constraint firstItem="43K-7r-buf" firstAttribute="top" secondItem="EVU-Zj-zLh" secondAttribute="bottom" constant="12" id="CGs-nz-bwW"/>
                             <constraint firstItem="cgg-8L-o0d" firstAttribute="centerY" secondItem="9aW-Bw-Fef" secondAttribute="centerY" id="Iyb-Ug-BjK"/>
+                            <constraint firstItem="JYg-QM-gbB" firstAttribute="top" secondItem="mof-M0-DD9" secondAttribute="bottom" constant="14" id="Lt9-fl-GxX"/>
                             <constraint firstItem="mof-M0-DD9" firstAttribute="top" secondItem="43K-7r-buf" secondAttribute="bottom" constant="10" id="Nd2-rV-NOK"/>
                             <constraint firstItem="9aW-Bw-Fef" firstAttribute="top" secondItem="O92-2X-g9d" secondAttribute="bottom" constant="-18" id="Quz-vk-nXt"/>
-                            <constraint firstItem="hy2-et-0R2" firstAttribute="top" secondItem="EVU-Zj-zLh" secondAttribute="bottom" constant="12" id="SVa-rI-k6y"/>
                             <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="T0J-Py-g7a"/>
-                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="Ueo-vV-bq7"/>
-                            <constraint firstItem="43K-7r-buf" firstAttribute="top" secondItem="hy2-et-0R2" secondAttribute="bottom" constant="12" id="Xi7-ED-MOX"/>
-                            <constraint firstItem="mof-M0-DD9" firstAttribute="leading" secondItem="hy2-et-0R2" secondAttribute="leading" id="ard-X6-2iK"/>
                             <constraint firstItem="JYg-QM-gbB" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="25" id="auq-YF-wD0"/>
                             <constraint firstItem="EVU-Zj-zLh" firstAttribute="top" secondItem="Swt-gq-Omm" secondAttribute="top" constant="18" id="aze-wi-7j1"/>
                             <constraint firstItem="43K-7r-buf" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="bS8-4N-SiE"/>
-                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="dEb-0N-v6o"/>
                             <constraint firstItem="Vrm-8h-WVC" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="gVI-zv-bel"/>
                             <constraint firstItem="O92-2X-g9d" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="13" id="hbl-qw-y7e"/>
-                            <constraint firstItem="hy2-et-0R2" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="hqn-ui-utg"/>
-                            <constraint firstItem="w4U-7Q-T6i" firstAttribute="top" secondItem="mof-M0-DD9" secondAttribute="bottom" constant="10" id="hzb-9P-DIb"/>
                             <constraint firstItem="FdL-S9-csj" firstAttribute="centerY" secondItem="O92-2X-g9d" secondAttribute="centerY" id="iPo-Sj-nQE"/>
                             <constraint firstItem="Swt-gq-Omm" firstAttribute="trailing" secondItem="6TO-1x-fLZ" secondAttribute="trailing" constant="13" id="mvP-AE-zHC"/>
                             <constraint firstItem="cgg-8L-o0d" firstAttribute="centerX" secondItem="McK-at-Ttl" secondAttribute="centerX" id="qtZ-M4-FK2"/>
