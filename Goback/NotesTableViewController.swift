@@ -14,7 +14,7 @@ class NotesTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-            title = "Notes"
+            
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
     }
