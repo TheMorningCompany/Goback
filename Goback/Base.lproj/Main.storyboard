@@ -316,7 +316,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="BG"/>
                         <constraints>
                             <constraint firstItem="9aW-Bw-Fef" firstAttribute="leading" secondItem="Swt-gq-Omm" secondAttribute="leading" constant="13" id="0SJ-uK-NwK"/>
                             <constraint firstItem="mof-M0-DD9" firstAttribute="leading" secondItem="EVU-Zj-zLh" secondAttribute="leading" id="0hC-OZ-ml2"/>
