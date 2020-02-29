@@ -52,74 +52,72 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
+		<dict>
+			<key>CFBundleAlternateIcons</key>
+			<dict>
+				<key>darkicon</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>dark</string>
+					</array>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+				<key>fadeicon</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>fade</string>
+					</array>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+				<key>glyphicon</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>glyph</string>
+					</array>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+				<key>greenicon</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>green</string>
+					</array>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+				<key>shadowicon</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>shadow</string>
+					</array>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+			</dict>
+			<key>CFBundlePrimaryIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>AppIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundleAlternateIcons</key>
-		<dict>
-			<key>darkicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>dark</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>fadeicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>fade</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>glyphicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>glyph</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>greenicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>green</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>shadowicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>shadow</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-		</dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>AppIcon</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<false/>
-		</dict>
-	</dict>
 </dict>
 </plist>

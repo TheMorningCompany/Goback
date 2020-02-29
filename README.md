@@ -2,7 +2,7 @@
 
 ## What it is
 
-Goback is a minimal reminders app eventually having a calendar as well.
+Goback is a minimalist todo list app, created to help you get things done quicker.
 
 ## Credits
 
