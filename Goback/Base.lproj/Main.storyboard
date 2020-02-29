@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="1905.7971014492755" y="8.7053571428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="5F4-mT-rxE">
             <objects>
-                <viewController id="0YN-pE-w4k" sceneMemberID="viewController">
+                <viewController id="0YN-pE-w4k" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1OC-FO-evT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,6 +217,9 @@
                                 <state key="normal" image="Glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapGlyphIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="BX1-wg-7z9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhK-dW-MJF" userLabel="Shadow">
                                 <rect key="frame" x="12" y="337" width="100" height="100"/>
@@ -225,6 +228,9 @@
                                 <state key="normal" image="Shadow">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapShadowIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="eOb-Zg-7dY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-5i-Yny" userLabel="Light">
                                 <rect key="frame" x="12" y="255" width="100" height="100"/>
@@ -233,6 +239,9 @@
                                 <state key="normal" image="Light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLightIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="1DW-5m-Y55"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-BJ-Cfe" userLabel="FadeBG">
                                 <rect key="frame" x="302" y="337" width="100" height="100"/>
@@ -240,6 +249,9 @@
                                 <state key="normal" image="Fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapFadeIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="LF9-YQ-pE0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrk-4s-HRF">
                                 <rect key="frame" x="20" y="155" width="52" height="36"/>
@@ -254,6 +266,9 @@
                                 <state key="normal" image="Green">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapGreenIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="37v-KK-KkO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-XY-6bX" userLabel="Dark">
                                 <rect key="frame" x="157" y="255" width="100" height="100"/>
@@ -264,6 +279,9 @@
                                 <state key="normal" image="Dark">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapDarkIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="Pet-DR-s4j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

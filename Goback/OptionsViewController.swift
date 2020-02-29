@@ -31,23 +31,23 @@ class OptionsViewController: UIViewController {
     }
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("darkicon")
+        UIApplication.shared.setAlternateIconName("dark")
     }
     @IBAction func didTapGreenIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("greenicon")
+        UIApplication.shared.setAlternateIconName("green")
     }
     @IBAction func didTapShadowIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("shadowicon")
+        UIApplication.shared.setAlternateIconName("shadow")
     }
     @IBAction func didTapGlyphIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("glyphicon")
+        UIApplication.shared.setAlternateIconName("glyph")
     }
     @IBAction func didTapFadeIcon(_ sender: UIButton) {
         doHaptic()
-        UIApplication.shared.setAlternateIconName("fadeicon")
+        UIApplication.shared.setAlternateIconName("fade")
     }
 
 }
