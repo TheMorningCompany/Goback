@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="714" width="414" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGw-hc-prL">
-                                        <rect key="frame" x="35" y="46" width="51" height="36"/>
+                                        <rect key="frame" x="40" y="46" width="51" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="cancel">
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -109,7 +109,7 @@
                                     <constraint firstItem="DU3-SM-293" firstAttribute="centerY" secondItem="CGw-hc-prL" secondAttribute="centerY" id="6ea-4A-rba"/>
                                     <constraint firstAttribute="height" constant="128" id="Ekn-Rf-1jL"/>
                                     <constraint firstAttribute="trailing" secondItem="DU3-SM-293" secondAttribute="trailing" constant="10" id="hO3-mg-jdy"/>
-                                    <constraint firstItem="CGw-hc-prL" firstAttribute="leading" secondItem="nL5-dL-RUu" secondAttribute="leading" constant="35" id="id1-nM-m8R"/>
+                                    <constraint firstItem="CGw-hc-prL" firstAttribute="leading" secondItem="nL5-dL-RUu" secondAttribute="leading" constant="40" id="id1-nM-m8R"/>
                                     <constraint firstItem="CGw-hc-prL" firstAttribute="centerY" secondItem="nL5-dL-RUu" secondAttribute="centerY" id="km4-iP-ReH"/>
                                     <constraint firstItem="DU3-SM-293" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CGw-hc-prL" secondAttribute="trailing" constant="8" symbolic="YES" id="loG-3x-0WU"/>
                                     <constraint firstItem="jja-SS-A6f" firstAttribute="centerX" secondItem="DU3-SM-293" secondAttribute="centerX" id="pWS-01-8uh"/>
@@ -290,8 +290,10 @@
                             <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" secondItem="aua-gh-fLn" secondAttribute="trailing" constant="18" id="5x6-ih-mBK"/>
                             <constraint firstItem="KxL-BJ-Cfe" firstAttribute="centerY" secondItem="rhK-dW-MJF" secondAttribute="centerY" id="6VE-vl-7Fd"/>
                             <constraint firstItem="bDu-pp-Ldu" firstAttribute="centerY" secondItem="E0q-sO-myZ" secondAttribute="centerY" id="7HM-On-6UK"/>
+                            <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aVH-7f-XaN" secondAttribute="trailing" symbolic="YES" id="83v-Xg-cy6"/>
                             <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" secondItem="mY7-Lf-eCk" secondAttribute="trailing" constant="12" id="8hS-CY-GIE"/>
                             <constraint firstItem="rhK-dW-MJF" firstAttribute="centerX" secondItem="VV6-5i-Yny" secondAttribute="centerX" id="9dU-GU-N9i"/>
+                            <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Mrk-4s-HRF" secondAttribute="trailing" symbolic="YES" id="AWP-gB-S7F"/>
                             <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" secondItem="bDu-pp-Ldu" secondAttribute="trailing" constant="18" id="D6p-0E-ah6"/>
                             <constraint firstItem="KxL-BJ-Cfe" firstAttribute="centerX" secondItem="mY7-Lf-eCk" secondAttribute="centerX" id="GaH-eO-ZrS"/>
                             <constraint firstItem="aua-gh-fLn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gge-Kr-3c6" secondAttribute="trailing" constant="8" symbolic="YES" id="H77-cf-jQC"/>
@@ -303,6 +305,7 @@
                             <constraint firstItem="8lT-XY-6bX" firstAttribute="centerY" secondItem="VV6-5i-Yny" secondAttribute="centerY" id="Xit-m8-G9H"/>
                             <constraint firstItem="Mrk-4s-HRF" firstAttribute="top" secondItem="gge-Kr-3c6" secondAttribute="bottom" constant="14" id="ZUn-Me-vSw"/>
                             <constraint firstItem="P7g-m7-uPa" firstAttribute="centerY" secondItem="rhK-dW-MJF" secondAttribute="centerY" id="dwA-01-Hs2"/>
+                            <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VJQ-PT-B5f" secondAttribute="trailing" symbolic="YES" id="ez2-9g-Aty"/>
                             <constraint firstItem="E0q-sO-myZ" firstAttribute="top" secondItem="VJQ-PT-B5f" secondAttribute="bottom" constant="14" id="fEV-0h-sAC"/>
                             <constraint firstItem="bDu-pp-Ldu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E0q-sO-myZ" secondAttribute="trailing" constant="8" symbolic="YES" id="gjI-kQ-HML"/>
                             <constraint firstItem="mY7-Lf-eCk" firstAttribute="centerY" secondItem="VV6-5i-Yny" secondAttribute="centerY" id="hgB-de-jbN"/>
@@ -357,6 +360,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ce3-RT-fxh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bii-26-R9D">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="barTintColor" name="BG"/>
@@ -407,7 +411,7 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hWV-HQ-l9F">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <segue destination="41D-hQ-Qsw" kind="presentation" identifier="showAddTodo" id="mDM-aU-PFd"/>
+                                <segue destination="41D-hQ-Qsw" kind="presentation" identifier="showAddNote" id="mDM-aU-PFd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -437,14 +441,11 @@
                                 <rect key="frame" x="0.0" y="714" width="414" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-r8-jFq">
-                                        <rect key="frame" x="35" y="46" width="51" height="36"/>
+                                        <rect key="frame" x="40" y="46" width="51" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="cancel">
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <action selector="cancel:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="ZuO-im-gCu"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn">
                                         <rect key="frame" x="154" y="9.3333333333333641" width="250" height="109.33333333333331"/>
@@ -456,9 +457,6 @@
                                         <state key="disabled" image="btnD"/>
                                         <state key="selected" image="btnP"/>
                                         <state key="highlighted" image="btnP"/>
-                                        <connections>
-                                            <action selector="done:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="mBW-PV-VmE"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRA-4M-wAA">
                                         <rect key="frame" x="260" y="52" width="38" height="24"/>
@@ -475,7 +473,7 @@
                                     <constraint firstItem="TRA-4M-wAA" firstAttribute="centerY" secondItem="77r-Ym-fQg" secondAttribute="centerY" id="LJV-nv-mPG"/>
                                     <constraint firstItem="77r-Ym-fQg" firstAttribute="centerY" secondItem="lqK-r8-jFq" secondAttribute="centerY" id="Lxp-K9-xDS"/>
                                     <constraint firstItem="lqK-r8-jFq" firstAttribute="centerY" secondItem="8gI-mj-Uap" secondAttribute="centerY" id="nls-Lg-v7e"/>
-                                    <constraint firstItem="lqK-r8-jFq" firstAttribute="leading" secondItem="8gI-mj-Uap" secondAttribute="leading" constant="35" id="yw0-aj-SY6"/>
+                                    <constraint firstItem="lqK-r8-jFq" firstAttribute="leading" secondItem="8gI-mj-Uap" secondAttribute="leading" constant="40" id="yw0-aj-SY6"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -492,11 +490,6 @@
                         <viewLayoutGuide key="safeArea" id="m44-5P-Nkx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>
-                    <connections>
-                        <outlet property="bottomConstraint" destination="afU-xM-NYQ" id="bfE-LT-Z9n"/>
-                        <outlet property="doneBtn" destination="77r-Ym-fQg" id="T0c-ay-DRl"/>
-                        <outlet property="textView" destination="6Vo-sY-wFx" id="GZn-7E-8yx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RP-tS-OIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
