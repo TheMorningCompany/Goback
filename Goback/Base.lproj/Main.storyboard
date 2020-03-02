@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController id="qaL-gt-XN0" customClass="TodoTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="zaf-9K-q9t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -58,7 +58,7 @@
             <objects>
                 <viewController id="fbo-kT-u4F" customClass="AddTodoViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZU-JI-CrH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add an item to your goback list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-kG-cYo">
@@ -162,7 +162,7 @@
             <objects>
                 <viewController id="0YN-pE-w4k" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1OC-FO-evT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="toggle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-sO-myZ">
@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbO-6M-lqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3663.7681159420295" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="3693" y="330"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qfm-jK-EQn">
@@ -375,18 +375,18 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="9.375"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Note Table View Controller-->
         <scene sceneID="fYj-U7-Ppo">
             <objects>
-                <tableViewController id="InH-zb-QRm" sceneMemberID="viewController">
+                <tableViewController id="InH-zb-QRm" customClass="NoteTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Jwa-3j-4V2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
                         <color key="sectionIndexBackgroundColor" name="BG"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="78" id="0rR-ze-Rfv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="78" id="0rR-ze-Rfv">
                                 <rect key="frame" x="20" y="55.333332061767578" width="374" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0rR-ze-Rfv" id="7nI-33-bKg">
@@ -420,21 +420,21 @@
             </objects>
             <point key="canvasLocation" x="1926" y="706"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Note View Controller-->
         <scene sceneID="yd7-Qs-RTy">
             <objects>
-                <viewController id="41D-hQ-Qsw" sceneMemberID="viewController">
+                <viewController id="41D-hQ-Qsw" customClass="AddNoteViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efc-6X-KRR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add a new note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
-                                <rect key="frame" x="20" y="20" width="374" height="694"/>
+                                <rect key="frame" x="20" y="15" width="374" height="699"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="41D-hQ-Qsw" id="iVF-dz-M3C"/>
+                                    <outlet property="delegate" destination="41D-hQ-Qsw" id="zIj-ZP-QFl"/>
                                 </connections>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gI-mj-Uap">
@@ -446,6 +446,9 @@
                                         <state key="normal" title="cancel">
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancel:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="UbI-Mo-1Kr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn">
                                         <rect key="frame" x="154" y="9.3333333333333641" width="250" height="109.33333333333331"/>
@@ -457,6 +460,9 @@
                                         <state key="disabled" image="btnD"/>
                                         <state key="selected" image="btnP"/>
                                         <state key="highlighted" image="btnP"/>
+                                        <connections>
+                                            <action selector="save:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="mff-9W-MnJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRA-4M-wAA">
                                         <rect key="frame" x="260" y="52" width="38" height="24"/>
@@ -481,19 +487,24 @@
                         <constraints>
                             <constraint firstItem="8gI-mj-Uap" firstAttribute="leading" secondItem="m44-5P-Nkx" secondAttribute="leading" id="00D-bj-5u5"/>
                             <constraint firstItem="m44-5P-Nkx" firstAttribute="trailing" secondItem="6Vo-sY-wFx" secondAttribute="trailing" constant="20" id="75e-e4-z2k"/>
-                            <constraint firstItem="6Vo-sY-wFx" firstAttribute="top" secondItem="m44-5P-Nkx" secondAttribute="top" constant="20" id="E1f-6A-7tU"/>
                             <constraint firstItem="8gI-mj-Uap" firstAttribute="trailing" secondItem="m44-5P-Nkx" secondAttribute="trailing" id="ICU-EL-F3c"/>
                             <constraint firstItem="6Vo-sY-wFx" firstAttribute="leading" secondItem="m44-5P-Nkx" secondAttribute="leading" constant="20" id="TzM-gE-eCM"/>
                             <constraint firstAttribute="bottom" secondItem="8gI-mj-Uap" secondAttribute="bottom" id="afU-xM-NYQ"/>
+                            <constraint firstItem="6Vo-sY-wFx" firstAttribute="top" secondItem="m44-5P-Nkx" secondAttribute="top" constant="15" id="hrc-Oo-tjB"/>
                             <constraint firstItem="8gI-mj-Uap" firstAttribute="top" secondItem="6Vo-sY-wFx" secondAttribute="bottom" id="pi6-gb-QHF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m44-5P-Nkx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="afU-xM-NYQ" id="7lg-fK-anR"/>
+                        <outlet property="doneBtn" destination="77r-Ym-fQg" id="h9l-GE-dJN"/>
+                        <outlet property="noteTextView" destination="6Vo-sY-wFx" id="K49-nu-UYi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RP-tS-OIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2816" y="706"/>
+            <point key="canvasLocation" x="2815.9420289855075" y="705.80357142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q3q-kd-iOg">
@@ -505,6 +516,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="barTintColor" name="BG"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -535,7 +547,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <namedColor name="BG">
-            <color red="1" green="0.99199998378753662" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94117647058823528" green="0.93333333333333335" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green">
             <color red="0.10599999874830246" green="0.72899997234344482" blue="0.25200000405311584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
