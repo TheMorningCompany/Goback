@@ -41,6 +41,7 @@ class NoteTableViewController: UITableViewController {
         
         let note = resultsControllerNotes.object(at: indexPath)
         cell.textLabel?.text = note.title
+        cell.textLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: UIFont.labelFontSize)
         
         
         return cell

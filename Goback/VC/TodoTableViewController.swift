@@ -49,6 +49,7 @@ class TodoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
+        cell.textLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: UIFont.labelFontSize)
         return cell
     }
     
