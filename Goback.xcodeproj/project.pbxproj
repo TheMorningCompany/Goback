@@ -27,6 +27,9 @@
 		00D98ABB240A476C00924423 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB6240A476C00924423 /* shadow@2x.png */; };
 		00D98ABC240A476C00924423 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB7240A476C00924423 /* green@2x.png */; };
 		00D98ABD240A476C00924423 /* dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB8240A476C00924423 /* dark@2x.png */; };
+		5D927D37240F873100C02C2E /* RSSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D927D36240F873100C02C2E /* RSSTableViewController.swift */; };
+		5D927D3B240F92F500C02C2E /* RSSFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */; };
+		5D927D3C240F937A00C02C2E /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D927D38240F87B100C02C2E /* FeedParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		00D98AB6240A476C00924423 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
 		00D98AB7240A476C00924423 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
 		00D98AB8240A476C00924423 /* dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark@2x.png"; sourceTree = "<group>"; };
+		5D927D36240F873100C02C2E /* RSSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSTableViewController.swift; sourceTree = "<group>"; };
+		5D927D38240F87B100C02C2E /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 				003879E32408BD7700A05C43 /* SceneDelegate.swift */,
 				003879E52408BD7700A05C43 /* ViewController.swift */,
 				003879E72408BD7700A05C43 /* Main.storyboard */,
+				5D927D36240F873100C02C2E /* RSSTableViewController.swift */,
+				5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */,
+				5D927D38240F87B100C02C2E /* FeedParser.swift */,
 				00D98AB1240A475200924423 /* OptionsViewController.swift */,
 				003879EA2408BD7800A05C43 /* Assets.xcassets */,
 				003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */,
@@ -211,11 +220,14 @@
 			files = (
 				006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */,
 				00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */,
+				5D927D37240F873100C02C2E /* RSSTableViewController.swift in Sources */,
 				005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */,
 				005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */,
 				003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */,
 				006F41CD240A30E30051AA5C /* Todos.xcdatamodeld in Sources */,
+				5D927D3B240F92F500C02C2E /* RSSFeedTableViewCell.swift in Sources */,
 				005FAAA5240CCB350021DFF6 /* NoteTableViewController.swift in Sources */,
+				5D927D3C240F937A00C02C2E /* FeedParser.swift in Sources */,
 				003879F92408CB5300A05C43 /* TodoTableViewController.swift in Sources */,
 				003879E62408BD7700A05C43 /* ViewController.swift in Sources */,
 				003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */,
@@ -365,14 +377,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
 				INFOPLIST_FILE = Goback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Goback;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theomorningcompany.goback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,14 +396,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
 				INFOPLIST_FILE = Goback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Goback;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theomorningcompany.goback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
