@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -533,52 +533,48 @@
         <scene sceneID="gWH-Zn-GYV">
             <objects>
                 <tableViewController id="XxX-pM-7pU" customClass="RSSTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8x1-Ec-XA3">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8x1-Ec-XA3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
                         <color key="sectionIndexBackgroundColor" name="BG"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="78" id="82s-Na-XgZ" customClass="RSSFeedTableViewCell" customModule="Goback" customModuleProvider="target">
-                                <rect key="frame" x="16" y="55.333332061767578" width="343" height="78"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="95" id="82s-Na-XgZ" customClass="RSSFeedTableViewCell" customModule="Goback" customModuleProvider="target">
+                                <rect key="frame" x="16" y="55.333332061767578" width="343" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="82s-Na-XgZ" id="5jI-TH-BuB">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="78"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-b3-JjF">
-                                            <rect key="frame" x="15" y="5" width="313" height="21"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Label">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-b3-JjF">
+                                            <rect key="frame" x="10" y="11" width="323" height="20"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxz-r4-axT">
-                                            <rect key="frame" x="15" y="29" width="328" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxz-r4-axT">
+                                            <rect key="frame" x="10" y="38.666666666666664" width="318" height="18"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-rA-UgM">
-                                            <rect key="frame" x="15" y="53" width="328" height="25"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-rA-UgM">
+                                            <rect key="frame" x="10" y="67.333333333333329" width="323" height="16.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="leading" secondItem="gJD-rA-UgM" secondAttribute="leading" id="AZq-2J-jDC"/>
-                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="trailing" secondItem="5jI-TH-BuB" secondAttribute="trailingMargin" id="B2J-EN-Mjd"/>
-                                        <constraint firstItem="Fxz-r4-axT" firstAttribute="top" secondItem="hrK-b3-JjF" secondAttribute="bottom" constant="3" id="BhD-5J-jX9"/>
-                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="leading" secondItem="5jI-TH-BuB" secondAttribute="leadingMargin" id="QB0-7H-SpE"/>
-                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="top" secondItem="5jI-TH-BuB" secondAttribute="topMargin" constant="-6" id="fd6-fy-PgG"/>
-                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="leading" secondItem="Fxz-r4-axT" secondAttribute="leading" id="h1n-2p-wLJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Fxz-r4-axT" secondAttribute="trailing" id="Bkp-sw-8xe"/>
+                                        <constraint firstItem="Fxz-r4-axT" firstAttribute="leading" secondItem="5jI-TH-BuB" secondAttribute="leading" constant="10" id="FyO-Ld-joA"/>
+                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="leading" secondItem="5jI-TH-BuB" secondAttribute="leading" constant="10" id="IlI-CG-ztF"/>
+                                        <constraint firstAttribute="trailing" secondItem="gJD-rA-UgM" secondAttribute="trailing" constant="10" id="QcY-oc-ojE"/>
+                                        <constraint firstItem="gJD-rA-UgM" firstAttribute="leading" secondItem="5jI-TH-BuB" secondAttribute="leading" constant="10" id="Xsp-rz-d3u"/>
+                                        <constraint firstAttribute="trailing" secondItem="hrK-b3-JjF" secondAttribute="trailing" constant="10" id="bL7-pU-9a7"/>
+                                        <constraint firstItem="Fxz-r4-axT" firstAttribute="centerY" secondItem="5jI-TH-BuB" secondAttribute="centerY" id="dE6-FP-yuh"/>
+                                        <constraint firstAttribute="bottom" secondItem="gJD-rA-UgM" secondAttribute="bottom" constant="11" id="qOG-le-UGx"/>
+                                        <constraint firstItem="hrK-b3-JjF" firstAttribute="top" secondItem="5jI-TH-BuB" secondAttribute="top" constant="11" id="uss-hv-cik"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="BG"/>
@@ -605,6 +601,9 @@
             <point key="canvasLocation" x="1013.6" y="-654.67980295566508"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KSq-Df-Ri7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="100" height="100"/>
         <image name="Fade" width="100" height="100"/>
@@ -615,11 +614,11 @@
         <image name="btn" width="959" height="420"/>
         <image name="btnD" width="959" height="420"/>
         <image name="btnP" width="959" height="420"/>
-        <image name="calendar" catalog="system" width="64" height="52"/>
-        <image name="checkmark.seal" catalog="system" width="64" height="60"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
-        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="checkmark.seal" catalog="system" width="128" height="122"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <namedColor name="BG">
             <color red="0.94099998474121094" green="0.93300002813339233" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -627,7 +626,4 @@
             <color red="0.10599999874830246" green="0.72899997234344482" blue="0.25200000405311584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="KSq-Df-Ri7"/>
-    </inferredMetricsTieBreakers>
 </document>
