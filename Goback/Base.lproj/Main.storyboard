@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbO-6M-lqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3693" y="330"/>
+            <point key="canvasLocation" x="3847" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qfm-jK-EQn">
@@ -369,7 +369,7 @@
                     <connections>
                         <segue destination="LDP-ib-hLI" kind="relationship" relationship="viewControllers" id="E6w-rW-fzu"/>
                         <segue destination="kph-M3-OOA" kind="relationship" relationship="viewControllers" id="MMx-hr-Mw7"/>
-                        <segue destination="XxX-pM-7pU" kind="relationship" relationship="viewControllers" id="7gA-no-B1G"/>
+                        <segue destination="SoG-wL-PJe" kind="relationship" relationship="viewControllers" id="7gA-no-B1G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM2-n8-RRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -586,23 +586,42 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="hAU-yB-Aoa"/>
                     <navigationItem key="navigationItem" id="eoM-yp-BOy">
                         <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="VGH-XL-Vya">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="D0f-Kw-Wns">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="0YN-pE-w4k" kind="presentation" id="VbG-1S-Gj7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Aw-Ff-J8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1956" y="-654.67980295566508"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Yd-f2-hgc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SoG-wL-PJe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="hAU-yB-Aoa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SMw-60-w2F">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="BG"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XxX-pM-7pU" kind="relationship" relationship="rootViewController" id="GV0-eg-uDk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmy-hr-LdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1013.6" y="-654.67980295566508"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KSq-Df-Ri7"/>
+        <segue reference="VbG-1S-Gj7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="100" height="100"/>
