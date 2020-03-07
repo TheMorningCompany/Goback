@@ -70,7 +70,7 @@ class TodoTableViewController: UITableViewController {
             
         }
         action.image = #imageLiteral(resourceName: "trash")
-        action.backgroundColor = UIColor(named: "Destructive")
+        action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
     }
     
@@ -91,7 +91,7 @@ class TodoTableViewController: UITableViewController {
             }
         }
         action.image = #imageLiteral(resourceName: "check")
-        action.backgroundColor = UIColor(named: "Green")
+        action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

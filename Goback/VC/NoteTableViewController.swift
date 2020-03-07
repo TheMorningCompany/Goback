@@ -70,7 +70,7 @@ class NoteTableViewController: UITableViewController {
             
         }
         action.image = #imageLiteral(resourceName: "trash")
-        action.backgroundColor = UIColor(named: "Destructive")
+        action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
         
     }
