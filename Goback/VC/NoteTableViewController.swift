@@ -22,6 +22,9 @@ class NoteTableViewController: UITableViewController {
         
         let requestNotes: NSFetchRequest<Notes> = Notes.fetchRequest()
         let sortDescriptorsNotes = NSSortDescriptor(key: "date", ascending: true)
+        
+        
+        
         requestNotes.sortDescriptors = [sortDescriptorsNotes]
         resultsControllerNotes = NSFetchedResultsController(fetchRequest: requestNotes, managedObjectContext: coreDataStackNotes.managedContextNotes, sectionNameKeyPath: nil, cacheName: nil
         )
