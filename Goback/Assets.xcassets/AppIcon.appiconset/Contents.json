@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "Artboard 2Dark@1x.png",
+      "filename" : "icon_40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "Artboard 2.png",
+      "filename" : "icon_60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "Artboard 2-1.png",
+      "filename" : "icon_58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "Artboard 2-2.png",
+      "filename" : "icon_87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "Artboard 2-3.png",
+      "filename" : "icon_80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "Artboard 2-4.png",
+      "filename" : "icon_120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "Artboard 2-5.png",
+      "filename" : "icon_120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Artboard 2-6.png",
+      "filename" : "icon_180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "Artboard 2-7.png",
+      "filename" : "icon_20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "Artboard 2Dark@1x-1.png",
+      "filename" : "icon_40-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "Artboard 2-9.png",
+      "filename" : "icon_29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "Artboard 2-8.png",
+      "filename" : "icon_58-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "Artboard 2Dark@1x-2.png",
+      "filename" : "icon_40-2.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "Artboard 2-10.png",
+      "filename" : "icon_80-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "Artboard 2-11.png",
+      "filename" : "icon_76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "Artboard 2-12.png",
+      "filename" : "icon_152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "Artboard 2-13.png",
+      "filename" : "icon_167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Artboard 2-14.png",
+      "filename" : "icon_1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
