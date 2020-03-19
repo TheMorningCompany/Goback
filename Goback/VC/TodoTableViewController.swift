@@ -19,6 +19,14 @@ class TodoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Hide tabBar shadow
+        self.tabBarController!.tabBar.layer.borderWidth = 0.50
+        self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
+        self.tabBarController?.tabBar.clipsToBounds = true
+        self.navigationController!.navigationBar.layer.borderWidth = 0.50
+        self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
+        self.navigationController?.navigationBar.clipsToBounds = true
+        
         //Request
         let request: NSFetchRequest<Todo> = Todo.fetchRequest()
         let sortDescriptors = NSSortDescriptor(key: "date", ascending: true)
