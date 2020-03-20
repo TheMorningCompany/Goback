@@ -317,7 +317,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="BG"/>
                         <constraints>
                             <constraint firstItem="VJQ-PT-B5f" firstAttribute="leading" secondItem="R3D-Ok-OF8" secondAttribute="leading" constant="20" id="1Dx-rq-dfv"/>
                             <constraint firstItem="R3D-Ok-OF8" firstAttribute="trailing" secondItem="aua-gh-fLn" secondAttribute="trailing" constant="18" id="5x6-ih-mBK"/>
@@ -657,7 +657,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KSq-Df-Ri7"/>
+        <segue reference="FU5-za-o1M"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="731.66668701171875" height="731.66668701171875"/>
