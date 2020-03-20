@@ -205,14 +205,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVH-7f-XaN">
-                                <rect key="frame" x="20" y="203" width="122" height="40"/>
+                                <rect key="frame" x="20" y="191" width="122" height="40"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-m7-uPa" userLabel="GlyphFade">
-                                <rect key="frame" x="137.66666666666666" y="337" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Hy-fa-GRM"/>
+                                    <constraint firstAttribute="height" constant="100" id="ruv-4K-91r"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Glyph">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -222,7 +226,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhK-dW-MJF" userLabel="Shadow">
-                                <rect key="frame" x="12" y="337" width="100" height="100"/>
+                                <rect key="frame" x="12" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="i9W-mW-xaw"/>
+                                    <constraint firstAttribute="height" constant="100" id="icS-6o-nDB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="Shadow">
@@ -233,8 +241,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-5i-Yny" userLabel="Light">
-                                <rect key="frame" x="12" y="255" width="100" height="100"/>
+                                <rect key="frame" x="12" y="243" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="m5w-ze-zbN"/>
+                                    <constraint firstAttribute="width" constant="100" id="sJa-dZ-805"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Light">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -244,7 +256,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-BJ-Cfe" userLabel="FadeBG">
-                                <rect key="frame" x="263" y="337" width="100" height="100"/>
+                                <rect key="frame" x="263" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IfH-jC-iMw"/>
+                                    <constraint firstAttribute="width" constant="100" id="xnX-L4-sTc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Fade">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -254,14 +270,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrk-4s-HRF">
-                                <rect key="frame" x="20" y="155" width="52" height="36"/>
+                                <rect key="frame" x="20" y="155" width="52" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HaA-ut-edi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="button">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-Lf-eCk" userLabel="Blue">
-                                <rect key="frame" x="263" y="255" width="100" height="100"/>
+                                <rect key="frame" x="263" y="243" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8x3-aA-eSC"/>
+                                    <constraint firstAttribute="height" constant="100" id="zIf-Iv-sCK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" image="Green">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -271,9 +294,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-XY-6bX" userLabel="Dark">
-                                <rect key="frame" x="137.66666666666666" y="255" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="243" width="100" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="csi-R0-5Ha"/>
+                                    <constraint firstAttribute="height" constant="100" id="xhe-yI-wBC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" image="Dark">
@@ -627,12 +654,12 @@
         <segue reference="KSq-Df-Ri7"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Dark" width="100" height="100"/>
-        <image name="Fade" width="100" height="100"/>
-        <image name="Glyph" width="100" height="100"/>
-        <image name="Green" width="100" height="100"/>
-        <image name="Light" width="100" height="100"/>
-        <image name="Shadow" width="100" height="100"/>
+        <image name="Dark" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Fade" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Glyph" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Green" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Light" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Shadow" width="731.66668701171875" height="731.66668701171875"/>
         <image name="btn" width="959" height="420"/>
         <image name="btnD" width="959" height="420"/>
         <image name="btnP" width="959" height="420"/>
