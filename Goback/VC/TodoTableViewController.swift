@@ -11,6 +11,8 @@ import CoreData
 
 class TodoTableViewController: UITableViewController {
     
+    let notification = UINotificationFeedbackGenerator()//Haptics
+    
     // MARK: - Properties
     
     var resultsController: NSFetchedResultsController<Todo>!
@@ -30,6 +32,7 @@ class TodoTableViewController: UITableViewController {
         //Request
         let request: NSFetchRequest<Todo> = Todo.fetchRequest()
         let sortDescriptors = NSSortDescriptor(key: "date", ascending: true)
+        
         
         
         //Init
@@ -69,6 +72,7 @@ class TodoTableViewController: UITableViewController {
             //TODO: Delete Todo
             let todo = self.resultsController.object(at: indexPath)
             self.resultsController.managedObjectContext.delete(todo)
+            self.notification.notificationOccurred(.error)//Haptic
             do {
                 try self.resultsController.managedObjectContext.save()
                 completion(true)
@@ -91,6 +95,7 @@ class TodoTableViewController: UITableViewController {
         let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
             let todo = self.resultsController.object(at: indexPath)
             self.resultsController.managedObjectContext.delete(todo)
+            self.notification.notificationOccurred(.success)//Haptic
             do {
                 try self.resultsController.managedObjectContext.save()
                 completion(true)

@@ -23,7 +23,7 @@ class AddNoteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         noteTextView.becomeFirstResponder()
         
         if let note = note {

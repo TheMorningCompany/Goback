@@ -11,6 +11,8 @@ import CoreData
 
 class AddTodoViewController: UIViewController {
     
+    
+    
     //MARK: - Properties
     
     var managedContext: NSManagedObjectContext!
@@ -27,7 +29,7 @@ class AddTodoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        segmentedControl.backgroundColor = UIColor(named: "BG")
         NotificationCenter.default.addObserver(self, selector:
             #selector(keyboardWillShow),
                                                name: UIResponder.keyboardWillShowNotification,
