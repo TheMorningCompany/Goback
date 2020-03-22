@@ -36,7 +36,7 @@ class AddTodoViewController: UIViewController {
             object: nil
         )
         textView.becomeFirstResponder()
-        segmentedControl.layer.backgroundColor = CGColor(srgbRed: 240, green: 238, blue: 240, alpha: 1)
+            
         if let todo = todo {
             textView.text = todo.title
             textView.text = todo.title
