@@ -214,8 +214,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="toggle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-sO-myZ">
-                                <rect key="frame" x="20" y="217" width="52" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haptics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-sO-myZ">
+                                <rect key="frame" x="20" y="217" width="56" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="UsQ-Ec-LP4"/>
                                 </constraints>
@@ -254,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="3945" y="9"/>
         </scene>
-        <!--Options View Controller-->
+        <!--App Icons View Controller-->
         <scene sceneID="uJg-zn-t4S">
             <objects>
-                <viewController id="KVy-La-VKX" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KVy-La-VKX" customClass="AppIconsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SAX-4f-GUt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +274,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapGlyphIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="as2-za-Mg3"/>
+                                    <action selector="didTapGlyphIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="cpg-IJ-0qO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE7-IC-esY" userLabel="Shadow">
@@ -290,7 +290,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapShadowIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="IK0-xo-yKD"/>
+                                    <action selector="didTapShadowIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="gyF-mY-Rdy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV4-ns-S9Z" userLabel="Light">
@@ -306,7 +306,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapLightIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="hSu-XP-BHT"/>
+                                    <action selector="didTapGreenIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="kSZ-1v-Lmg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jo5-tN-5vj" userLabel="FadeBG">
@@ -321,7 +321,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapFadeIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="yo2-kL-XiZ"/>
+                                    <action selector="didTapFadeIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="I5L-Th-csT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-5T-drq" userLabel="Blue">
@@ -336,7 +336,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapGreenIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="pcN-V3-U04"/>
+                                    <action selector="didTapLightIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="SUS-Yb-qOc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-Hr-7Oh" userLabel="Dark">
@@ -354,7 +354,7 @@
                                 </state>
                                 <state key="highlighted" image="selected"/>
                                 <connections>
-                                    <action selector="didTapDarkIcon:" destination="0YN-pE-w4k" eventType="touchUpInside" id="AW3-eg-67Q"/>
+                                    <action selector="didTapDarkIcon:" destination="KVy-La-VKX" eventType="touchUpInside" id="vdp-KN-pB2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenapp" translatesAutoresizingMaskIntoConstraints="NO" id="Vye-xy-GlC">

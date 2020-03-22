@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */; };
 		003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879E12408BD7700A05C43 /* AppDelegate.swift */; };
 		003879E42408BD7700A05C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879E32408BD7700A05C43 /* SceneDelegate.swift */; };
 		003879E62408BD7700A05C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879E52408BD7700A05C43 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
 		003879DE2408BD7700A05C43 /* Goback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003879E12408BD7700A05C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		003879E32408BD7700A05C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */,
 				5D927D38240F87B100C02C2E /* FeedParser.swift */,
 				00D98AB1240A475200924423 /* OptionsViewController.swift */,
+				000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */,
 				003879EA2408BD7800A05C43 /* Assets.xcassets */,
 				003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */,
 				003879EF2408BD7800A05C43 /* Info.plist */,
@@ -221,6 +224,7 @@
 				006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */,
 				00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */,
 				5D927D37240F873100C02C2E /* RSSTableViewController.swift in Sources */,
+				000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */,
 				005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */,
 				005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */,
 				003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */,
