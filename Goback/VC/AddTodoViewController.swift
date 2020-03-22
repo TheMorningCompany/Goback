@@ -20,7 +20,7 @@ class AddTodoViewController: UIViewController {
     
     //MARK: Outlets
     
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
@@ -32,11 +32,11 @@ class AddTodoViewController: UIViewController {
         segmentedControl.backgroundColor = UIColor(named: "BG")
         NotificationCenter.default.addObserver(self, selector:
             #selector(keyboardWillShow),
-                                               name: UIResponder.keyboardWillShowNotification,
-                                               object: nil
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
         )
         textView.becomeFirstResponder()
-        
+        segmentedControl.layer.backgroundColor = CGColor(srgbRed: 240, green: 238, blue: 240, alpha: 1)
         if let todo = todo {
             textView.text = todo.title
             textView.text = todo.title
