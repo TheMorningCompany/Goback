@@ -126,7 +126,7 @@
                                     <segment title="!!"/>
                                     <segment title="!!!"/>
                                 </segments>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" name="BG"/>
                                 <color key="selectedSegmentTintColor" name="BG"/>
                             </segmentedControl>
                         </subviews>
@@ -509,7 +509,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add a new note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
                                 <rect key="frame" x="20" y="15" width="335" height="638"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="41D-hQ-Qsw" id="zIj-ZP-QFl"/>
