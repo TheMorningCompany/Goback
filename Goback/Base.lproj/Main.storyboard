@@ -38,7 +38,7 @@
                         <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="5GQ-4e-Mvh">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <segue destination="6eV-aD-tsv" kind="presentation" id="0x3-ZI-96S"/>
+                                <segue destination="8ob-9h-WcP" kind="presentation" id="0x3-ZI-96S"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MHy-mH-O6W">
@@ -300,10 +300,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mCG-gK-dN8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iEV-h6-Dd5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxO-VO-M2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="8"/>
+            <point key="canvasLocation" x="5569.5652173913049" y="7.3660714285714279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qfm-jK-EQn">
@@ -386,7 +387,7 @@
                         <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="xUo-rH-Gdx">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <segue destination="6eV-aD-tsv" kind="presentation" id="cxW-ky-dqC"/>
+                                <segue destination="8ob-9h-WcP" kind="presentation" id="cxW-ky-dqC"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hWV-HQ-l9F">
@@ -570,7 +571,7 @@
                         <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="VGH-XL-Vya">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <segue destination="6eV-aD-tsv" kind="presentation" id="svh-aE-hz5"/>
+                                <segue destination="8ob-9h-WcP" kind="presentation" id="svh-aE-hz5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -720,7 +721,7 @@
                                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="KVy-La-VKX" kind="presentation" id="T14-02-DfT"/>
+                                                        <segue destination="KVy-La-VKX" kind="show" id="T14-02-DfT"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -741,14 +742,36 @@
                             <outlet property="delegate" destination="6eV-aD-tsv" id="LN8-h9-zNE"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xrZ-oP-44b"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-We-9PR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3839" y="7"/>
+            <point key="canvasLocation" x="4747.826086956522" y="6.6964285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cME-Od-PEs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ob-9h-WcP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="tqL-ed-WYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="BG"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" name="BG"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6eV-aD-tsv" kind="relationship" relationship="rootViewController" id="xhD-Ul-eq1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oB5-Ox-xDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3837.68115942029" y="6.6964285714285712"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="svh-aE-hz5"/>
+        <segue reference="cxW-ky-dqC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="731.66668701171875" height="731.66668701171875"/>
