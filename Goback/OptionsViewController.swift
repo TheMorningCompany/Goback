@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionsViewController: UIViewController {
+class OptionsViewController: UITableViewController {
     
     var impact = UIImpactFeedbackGenerator()
     
@@ -23,7 +23,10 @@ class OptionsViewController: UIViewController {
     }
     
     
-
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 
 }

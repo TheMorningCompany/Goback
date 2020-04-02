@@ -603,10 +603,10 @@
             </objects>
             <point key="canvasLocation" x="1013.6" y="-654.67980295566508"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="fTG-cT-bKi">
             <objects>
-                <tableViewController id="6eV-aD-tsv" sceneMemberID="viewController">
+                <tableViewController id="6eV-aD-tsv" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lFG-ge-mL5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -742,7 +742,13 @@
                             <outlet property="delegate" destination="6eV-aD-tsv" id="LN8-h9-zNE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xrZ-oP-44b"/>
+                    <navigationItem key="navigationItem" id="xrZ-oP-44b">
+                        <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="skT-c7-IfW">
+                            <connections>
+                                <action selector="close:" destination="6eV-aD-tsv" id="ynH-Zs-lrU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-We-9PR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -791,6 +797,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="BG">
             <color red="0.94099998474121094" green="0.93300002813339233" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
