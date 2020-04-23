@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppIconsViewController: UIViewController {
+class AppIconsViewController: UITableViewController {
     
     var impact = UIImpactFeedbackGenerator()
     
