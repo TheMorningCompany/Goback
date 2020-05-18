@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController id="qaL-gt-XN0" customClass="TodoTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="zaf-9K-q9t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -58,7 +58,7 @@
             <objects>
                 <viewController id="fbo-kT-u4F" customClass="AddTodoViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZU-JI-CrH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add an item to your list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-kG-cYo">
@@ -163,7 +163,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LDP-ib-hLI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="checkmark.seal" catalog="system" id="b2R-bH-bzj"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NO1-5x-PeT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="NO1-5x-PeT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
@@ -213,7 +213,7 @@
             <objects>
                 <tableViewController id="InH-zb-QRm" customClass="NoteTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Jwa-3j-4V2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -258,10 +258,10 @@
             <objects>
                 <viewController id="41D-hQ-Qsw" customClass="AddNoteViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efc-6X-KRR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add a new note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="write a note here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
                                 <rect key="frame" x="20" y="15" width="374" height="722"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
@@ -366,7 +366,7 @@
             <objects>
                 <tableViewController id="XxX-pM-7pU" customClass="RSSTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8x1-Ec-XA3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -459,7 +459,7 @@
             <objects>
                 <tableViewController id="6eV-aD-tsv" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lFG-ge-mL5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="tintColor" name="BG"/>
@@ -594,7 +594,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xrZ-oP-44b">
-                        <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="skT-c7-IfW">
+                        <barButtonItem key="rightBarButtonItem" image="xmark" catalog="system" id="skT-c7-IfW">
                             <connections>
                                 <action selector="close:" destination="6eV-aD-tsv" id="ynH-Zs-lrU"/>
                             </connections>
@@ -631,7 +631,7 @@
             <objects>
                 <tableViewController id="GZs-XG-EIC" customClass="AppIconsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QV9-AJ-PcM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -899,7 +899,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cxW-ky-dqC"/>
+        <segue reference="0x3-ZI-96S"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="731.66668701171875" height="731.66668701171875"/>
@@ -919,7 +919,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
-        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BG">
             <color red="0.94099998474121094" green="0.93300002813339233" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
