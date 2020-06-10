@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
-    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -97,21 +97,13 @@
                                             <action selector="done:" destination="fbo-kT-u4F" eventType="touchUpInside" id="NQ5-dw-tj9"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jja-SS-A6f">
-                                        <rect key="frame" x="270" y="52" width="38" height="24"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="jja-SS-A6f" firstAttribute="centerY" secondItem="DU3-SM-293" secondAttribute="centerY" id="13C-TG-AHh"/>
                                     <constraint firstItem="DU3-SM-293" firstAttribute="centerY" secondItem="CGw-hc-prL" secondAttribute="centerY" id="6ea-4A-rba"/>
                                     <constraint firstAttribute="height" constant="128" id="Ekn-Rf-1jL"/>
                                     <constraint firstAttribute="trailing" secondItem="DU3-SM-293" secondAttribute="trailing" id="hO3-mg-jdy"/>
                                     <constraint firstItem="CGw-hc-prL" firstAttribute="leading" secondItem="nL5-dL-RUu" secondAttribute="leading" constant="40" id="id1-nM-m8R"/>
                                     <constraint firstItem="CGw-hc-prL" firstAttribute="centerY" secondItem="nL5-dL-RUu" secondAttribute="centerY" id="km4-iP-ReH"/>
-                                    <constraint firstItem="jja-SS-A6f" firstAttribute="centerX" secondItem="DU3-SM-293" secondAttribute="centerX" id="pWS-01-8uh"/>
                                     <constraint firstItem="DU3-SM-293" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CGw-hc-prL" secondAttribute="trailing" constant="8" symbolic="YES" id="ryK-e8-usy"/>
                                 </constraints>
                             </view>
@@ -908,7 +900,7 @@
         <image name="Green" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Light" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Shadow" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="btn" width="959" height="420"/>
+        <image name="btn" width="959" height="442.66665649414062"/>
         <image name="btnD" width="959" height="420"/>
         <image name="btnP" width="959" height="420"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
