@@ -84,15 +84,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU3-SM-293" userLabel="addBtn">
-                                        <rect key="frame" x="164" y="9.3333333333333641" width="250" height="109.33333333333331"/>
+                                        <rect key="frame" x="184" y="39" width="200" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="DU3-SM-293" secondAttribute="height" multiplier="137:60" id="D6Y-Wh-7fG"/>
-                                            <constraint firstAttribute="width" constant="250" id="M0Q-fN-tBM"/>
+                                            <constraint firstAttribute="width" secondItem="DU3-SM-293" secondAttribute="height" multiplier="704:176" id="D6Y-Wh-7fG"/>
+                                            <constraint firstAttribute="width" constant="200" id="M0Q-fN-tBM"/>
                                         </constraints>
-                                        <state key="normal" image="btn"/>
+                                        <state key="normal" image="btn-1"/>
                                         <state key="disabled" image="btnD"/>
                                         <state key="selected" image="btnP"/>
-                                        <state key="highlighted" image="btnP"/>
+                                        <state key="highlighted" image="btnP-1"/>
                                         <connections>
                                             <action selector="done:" destination="fbo-kT-u4F" eventType="touchUpInside" id="NQ5-dw-tj9"/>
                                         </connections>
@@ -101,7 +101,7 @@
                                 <constraints>
                                     <constraint firstItem="DU3-SM-293" firstAttribute="centerY" secondItem="CGw-hc-prL" secondAttribute="centerY" id="6ea-4A-rba"/>
                                     <constraint firstAttribute="height" constant="128" id="Ekn-Rf-1jL"/>
-                                    <constraint firstAttribute="trailing" secondItem="DU3-SM-293" secondAttribute="trailing" id="hO3-mg-jdy"/>
+                                    <constraint firstAttribute="trailing" secondItem="DU3-SM-293" secondAttribute="trailing" constant="30" id="hO3-mg-jdy"/>
                                     <constraint firstItem="CGw-hc-prL" firstAttribute="leading" secondItem="nL5-dL-RUu" secondAttribute="leading" constant="40" id="id1-nM-m8R"/>
                                     <constraint firstItem="CGw-hc-prL" firstAttribute="centerY" secondItem="nL5-dL-RUu" secondAttribute="centerY" id="km4-iP-ReH"/>
                                     <constraint firstItem="DU3-SM-293" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CGw-hc-prL" secondAttribute="trailing" constant="8" symbolic="YES" id="ryK-e8-usy"/>
@@ -276,31 +276,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn">
-                                        <rect key="frame" x="164" y="0.33333333333337123" width="250" height="109.33333333333333"/>
+                                        <rect key="frame" x="184" y="30" width="200" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="Jtl-LQ-LA8"/>
-                                            <constraint firstAttribute="width" secondItem="77r-Ym-fQg" secondAttribute="height" multiplier="137:60" id="QQy-8V-GJR"/>
+                                            <constraint firstAttribute="width" constant="200" id="Jtl-LQ-LA8"/>
+                                            <constraint firstAttribute="width" secondItem="77r-Ym-fQg" secondAttribute="height" multiplier="704:176" id="QQy-8V-GJR"/>
                                         </constraints>
-                                        <state key="normal" image="btn"/>
+                                        <state key="normal" image="btn-1"/>
                                         <state key="disabled" image="btnD"/>
                                         <state key="selected" image="btnP"/>
-                                        <state key="highlighted" image="btnP"/>
+                                        <state key="highlighted" image="btnP-1"/>
                                         <connections>
                                             <action selector="save:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="mff-9W-MnJ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRA-4M-wAA">
-                                        <rect key="frame" x="270" y="43" width="38" height="24"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="77r-Ym-fQg" secondAttribute="trailing" id="4EV-f7-RcQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="77r-Ym-fQg" secondAttribute="trailing" constant="30" id="4EV-f7-RcQ"/>
                                     <constraint firstAttribute="height" constant="110" id="72K-MH-p4P"/>
-                                    <constraint firstItem="TRA-4M-wAA" firstAttribute="centerX" secondItem="77r-Ym-fQg" secondAttribute="centerX" id="9Xj-td-5WL"/>
-                                    <constraint firstItem="TRA-4M-wAA" firstAttribute="centerY" secondItem="77r-Ym-fQg" secondAttribute="centerY" id="LJV-nv-mPG"/>
                                     <constraint firstItem="77r-Ym-fQg" firstAttribute="centerY" secondItem="lqK-r8-jFq" secondAttribute="centerY" id="Lxp-K9-xDS"/>
                                     <constraint firstItem="77r-Ym-fQg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lqK-r8-jFq" secondAttribute="trailing" constant="8" symbolic="YES" id="em0-Nc-oHj"/>
                                     <constraint firstItem="lqK-r8-jFq" firstAttribute="centerY" secondItem="8gI-mj-Uap" secondAttribute="centerY" id="nls-Lg-v7e"/>
@@ -900,9 +892,10 @@
         <image name="Green" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Light" width="731.66668701171875" height="731.66668701171875"/>
         <image name="Shadow" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="btn" width="959" height="442.66665649414062"/>
-        <image name="btnD" width="959" height="420"/>
+        <image name="btn-1" width="704" height="176"/>
+        <image name="btnD" width="704" height="176"/>
         <image name="btnP" width="959" height="420"/>
+        <image name="btnP-1" width="704" height="176"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="checkmark.seal" catalog="system" width="128" height="122"/>
         <image name="gear" catalog="system" width="128" height="119"/>
