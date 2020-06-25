@@ -671,13 +671,12 @@
                                                         <constraint firstAttribute="width" secondItem="Dub-bk-y0r" secondAttribute="height" multiplier="1:1" id="Rln-gR-jqv"/>
                                                     </constraints>
                                                     <state key="normal" image="Light"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapLightIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="CO4-rR-PF6"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="white" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JId-Da-vtu">
-                                                    <rect key="frame" x="135" y="48" width="54" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="54" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -685,7 +684,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Dub-bk-y0r" firstAttribute="leading" secondItem="QS7-On-Rqi" secondAttribute="leading" constant="5" id="BQg-wl-PYG"/>
-                                                <constraint firstItem="JId-Da-vtu" firstAttribute="centerY" secondItem="QS7-On-Rqi" secondAttribute="centerY" id="MlS-Wl-NPj"/>
+                                                <constraint firstItem="JId-Da-vtu" firstAttribute="centerY" secondItem="QS7-On-Rqi" secondAttribute="centerY" constant="-10" id="MlS-Wl-NPj"/>
                                                 <constraint firstItem="Dub-bk-y0r" firstAttribute="centerY" secondItem="QS7-On-Rqi" secondAttribute="centerY" id="P7C-99-JbW"/>
                                                 <constraint firstItem="JId-Da-vtu" firstAttribute="leading" secondItem="Dub-bk-y0r" secondAttribute="trailing" constant="-10" id="j14-EG-Vvf"/>
                                             </constraints>
@@ -706,20 +705,19 @@
                                                         <constraint firstAttribute="width" secondItem="1UE-bG-xXP" secondAttribute="height" multiplier="1:1" id="KNb-ky-u1H"/>
                                                     </constraints>
                                                     <state key="normal" image="Dark"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapDarkIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="bJX-af-mUJ"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raQ-qe-s5c">
-                                                    <rect key="frame" x="135" y="48" width="44" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="44" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="raQ-qe-s5c" firstAttribute="centerY" secondItem="GmT-Gq-i0m" secondAttribute="centerY" id="CRn-W8-AHe"/>
+                                                <constraint firstItem="raQ-qe-s5c" firstAttribute="centerY" secondItem="GmT-Gq-i0m" secondAttribute="centerY" constant="-10" id="CRn-W8-AHe"/>
                                                 <constraint firstItem="raQ-qe-s5c" firstAttribute="leading" secondItem="1UE-bG-xXP" secondAttribute="trailing" constant="-10" id="UpR-fW-MJ9"/>
                                                 <constraint firstItem="1UE-bG-xXP" firstAttribute="centerY" secondItem="GmT-Gq-i0m" secondAttribute="centerY" id="WtQ-WP-8WR"/>
                                                 <constraint firstItem="1UE-bG-xXP" firstAttribute="leading" secondItem="GmT-Gq-i0m" secondAttribute="leading" constant="5" id="jFR-id-RgS"/>
@@ -741,20 +739,19 @@
                                                         <constraint firstAttribute="width" constant="140" id="sTL-Sl-rHe"/>
                                                     </constraints>
                                                     <state key="normal" image="Green"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapGreenIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="OS5-nf-b9m"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbW-Hh-hHN">
-                                                    <rect key="frame" x="135" y="48" width="57" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="57" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gbW-Hh-hHN" firstAttribute="centerY" secondItem="gL3-nN-V42" secondAttribute="centerY" id="VV4-zX-8f4"/>
+                                                <constraint firstItem="gbW-Hh-hHN" firstAttribute="centerY" secondItem="gL3-nN-V42" secondAttribute="centerY" constant="-10" id="VV4-zX-8f4"/>
                                                 <constraint firstItem="y6T-po-PfF" firstAttribute="leading" secondItem="gL3-nN-V42" secondAttribute="leading" constant="5" id="b7W-yf-grC"/>
                                                 <constraint firstItem="gbW-Hh-hHN" firstAttribute="leading" secondItem="y6T-po-PfF" secondAttribute="trailing" constant="-10" id="wb4-Xo-pzp"/>
                                                 <constraint firstItem="y6T-po-PfF" firstAttribute="centerY" secondItem="gL3-nN-V42" secondAttribute="centerY" id="xex-Rd-JD9"/>
@@ -776,13 +773,12 @@
                                                         <constraint firstAttribute="width" constant="140" id="ex7-tY-3iN"/>
                                                     </constraints>
                                                     <state key="normal" image="Shadow"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapShadowIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="rFe-F7-Eqn"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64l-ML-cLZ">
-                                                    <rect key="frame" x="135" y="48" width="77" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="77" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -790,7 +786,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mef-sX-LOJ" firstAttribute="centerY" secondItem="OoT-yP-EWE" secondAttribute="centerY" id="bcJ-k5-aBc"/>
-                                                <constraint firstItem="64l-ML-cLZ" firstAttribute="centerY" secondItem="OoT-yP-EWE" secondAttribute="centerY" id="de2-4e-RLo"/>
+                                                <constraint firstItem="64l-ML-cLZ" firstAttribute="centerY" secondItem="OoT-yP-EWE" secondAttribute="centerY" constant="-10" id="de2-4e-RLo"/>
                                                 <constraint firstItem="64l-ML-cLZ" firstAttribute="leading" secondItem="mef-sX-LOJ" secondAttribute="trailing" constant="-10" id="oDd-kb-oyh"/>
                                                 <constraint firstItem="mef-sX-LOJ" firstAttribute="leading" secondItem="OoT-yP-EWE" secondAttribute="leading" constant="5" id="stO-Qy-JSw"/>
                                             </constraints>
@@ -811,20 +807,19 @@
                                                         <constraint firstAttribute="width" constant="140" id="KFH-n0-46y"/>
                                                     </constraints>
                                                     <state key="normal" image="Glyph"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapGlyphIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="R5a-hy-TSm"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="neon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-hr-y9m">
-                                                    <rect key="frame" x="135" y="48" width="50" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="50" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="zEm-hr-y9m" firstAttribute="centerY" secondItem="c1b-AH-bzf" secondAttribute="centerY" id="6EM-85-PFR"/>
+                                                <constraint firstItem="zEm-hr-y9m" firstAttribute="centerY" secondItem="c1b-AH-bzf" secondAttribute="centerY" constant="-10" id="6EM-85-PFR"/>
                                                 <constraint firstItem="eAi-lT-sfI" firstAttribute="leading" secondItem="c1b-AH-bzf" secondAttribute="leading" constant="5" id="FSJ-AO-7pV"/>
                                                 <constraint firstItem="zEm-hr-y9m" firstAttribute="leading" secondItem="eAi-lT-sfI" secondAttribute="trailing" constant="-10" id="iM6-oV-g4z"/>
                                                 <constraint firstItem="eAi-lT-sfI" firstAttribute="centerY" secondItem="c1b-AH-bzf" secondAttribute="centerY" id="tXr-Lq-9UN"/>
@@ -846,20 +841,19 @@
                                                         <constraint firstAttribute="width" secondItem="Ksw-Rk-YKD" secondAttribute="height" multiplier="1:1" id="XWQ-Ja-Tmg"/>
                                                     </constraints>
                                                     <state key="normal" image="Fade"/>
-                                                    <state key="highlighted" image="selected"/>
                                                     <connections>
                                                         <action selector="didTapFadeIcon:" destination="GZs-XG-EIC" eventType="touchUpInside" id="FsC-L4-u8o"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOt-tJ-3ls">
-                                                    <rect key="frame" x="135" y="48" width="44" height="29"/>
+                                                    <rect key="frame" x="135" y="38" width="44" height="29"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="JOt-tJ-3ls" firstAttribute="centerY" secondItem="hsN-kj-DM9" secondAttribute="centerY" id="7Cj-31-I0g"/>
+                                                <constraint firstItem="JOt-tJ-3ls" firstAttribute="centerY" secondItem="hsN-kj-DM9" secondAttribute="centerY" constant="-10" id="7Cj-31-I0g"/>
                                                 <constraint firstItem="JOt-tJ-3ls" firstAttribute="leading" secondItem="Ksw-Rk-YKD" secondAttribute="trailing" constant="-10" id="XlF-GQ-qB6"/>
                                                 <constraint firstItem="Ksw-Rk-YKD" firstAttribute="centerY" secondItem="hsN-kj-DM9" secondAttribute="centerY" id="dXH-FY-qEt"/>
                                                 <constraint firstItem="Ksw-Rk-YKD" firstAttribute="leading" secondItem="hsN-kj-DM9" secondAttribute="leading" constant="5" id="fpo-Me-VJL"/>
@@ -886,12 +880,12 @@
         <segue reference="0x3-ZI-96S"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Dark" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="Fade" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="Glyph" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="Green" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="Light" width="731.66668701171875" height="731.66668701171875"/>
-        <image name="Shadow" width="731.66668701171875" height="731.66668701171875"/>
+        <image name="Dark" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="Fade" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="Glyph" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="Green" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="Light" width="651.66668701171875" height="651.66668701171875"/>
+        <image name="Shadow" width="651.66668701171875" height="651.66668701171875"/>
         <image name="btn-1" width="704" height="176"/>
         <image name="btnD" width="704" height="176"/>
         <image name="btnP" width="959" height="420"/>
@@ -902,7 +896,6 @@
         <image name="gearGreen" width="1024" height="1024"/>
         <image name="greenapp" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="selected" width="731.66668701171875" height="731.66668701171875"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BG">
