@@ -35,7 +35,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="LZo-en-p5y">
-                        <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="5GQ-4e-Mvh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" id="5GQ-4e-Mvh">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="0x3-ZI-96S"/>
@@ -227,7 +227,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Vmc-j6-rfs">
-                        <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="xUo-rH-Gdx">
+                        <barButtonItem key="leftBarButtonItem" image="gearshape" id="xUo-rH-Gdx">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="cxW-ky-dqC"/>
@@ -403,7 +403,7 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" id="eoM-yp-BOy">
-                        <barButtonItem key="leftBarButtonItem" image="gear" catalog="system" id="VGH-XL-Vya">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" id="VGH-XL-Vya">
                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="svh-aE-hz5"/>
@@ -877,7 +877,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="svh-aE-hz5"/>
+        <segue reference="cxW-ky-dqC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="651.66668701171875" height="651.66668701171875"/>
@@ -892,8 +892,8 @@
         <image name="btnP-1" width="704" height="176"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="checkmark.seal" catalog="system" width="128" height="122"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearGreen" width="1024" height="1024"/>
+        <image name="gearshape" width="128" height="128"/>
         <image name="greenapp" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
