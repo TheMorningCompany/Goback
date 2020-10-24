@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce3-RT-fxh">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,13 +38,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="LZo-en-p5y">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" id="5GQ-4e-Mvh">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="0x3-ZI-96S"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MHy-mH-O6W">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="fbo-kT-u4F" kind="presentation" identifier="showAddTodo" id="p0p-tM-gfK"/>
                             </connections>
@@ -63,7 +65,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add an item to your list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-kG-cYo">
                                 <rect key="frame" x="20" y="15" width="374" height="678"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -73,11 +75,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nL5-dL-RUu">
                                 <rect key="frame" x="0.0" y="719" width="414" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGw-hc-prL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGw-hc-prL">
                                         <rect key="frame" x="40" y="46" width="51" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="cancel">
-                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="cancel:" destination="fbo-kT-u4F" eventType="touchUpInside" id="Dfb-g7-oBh"/>
@@ -122,6 +124,7 @@
                                 <color key="selectedSegmentTintColor" name="BG"/>
                             </segmentedControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="rNm-wO-Vdi"/>
                         <color key="backgroundColor" name="BG"/>
                         <constraints>
                             <constraint firstItem="nL5-dL-RUu" firstAttribute="top" secondItem="14P-8Z-zVq" secondAttribute="bottom" constant="-15" id="2cK-Qz-jpP"/>
@@ -135,7 +138,6 @@
                             <constraint firstItem="nL5-dL-RUu" firstAttribute="trailing" secondItem="rNm-wO-Vdi" secondAttribute="trailing" id="llw-ku-1Cz"/>
                             <constraint firstItem="0SK-kG-cYo" firstAttribute="leading" secondItem="rNm-wO-Vdi" secondAttribute="leading" constant="20" id="xmo-KX-LZ2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rNm-wO-Vdi"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Y5-4U-3Qi"/>
                     <connections>
@@ -162,11 +164,11 @@
                         <color key="barTintColor" name="BG"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
-                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -188,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="barTintColor" name="BG"/>
-                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="LDP-ib-hLI" kind="relationship" relationship="viewControllers" id="E6w-rW-fzu"/>
@@ -228,13 +230,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vmc-j6-rfs">
                         <barButtonItem key="leftBarButtonItem" image="gearshape" id="xUo-rH-Gdx">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="cxW-ky-dqC"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hWV-HQ-l9F">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="41D-hQ-Qsw" kind="presentation" identifier="showAddNote" id="mDM-aU-PFd"/>
                             </connections>
@@ -255,7 +257,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="write a note here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
                                 <rect key="frame" x="20" y="15" width="374" height="722"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -265,11 +267,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gI-mj-Uap">
                                 <rect key="frame" x="0.0" y="737" width="414" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-r8-jFq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-r8-jFq">
                                         <rect key="frame" x="40" y="37" width="51" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="cancel">
-                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="cancel:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="UbI-Mo-1Kr"/>
@@ -300,6 +302,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="m44-5P-Nkx"/>
                         <color key="backgroundColor" name="BG"/>
                         <constraints>
                             <constraint firstItem="8gI-mj-Uap" firstAttribute="leading" secondItem="m44-5P-Nkx" secondAttribute="leading" id="00D-bj-5u5"/>
@@ -310,7 +313,6 @@
                             <constraint firstItem="6Vo-sY-wFx" firstAttribute="top" secondItem="m44-5P-Nkx" secondAttribute="top" constant="15" id="hrc-Oo-tjB"/>
                             <constraint firstItem="8gI-mj-Uap" firstAttribute="top" secondItem="6Vo-sY-wFx" secondAttribute="bottom" id="pi6-gb-QHF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="m44-5P-Nkx"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>
                     <connections>
@@ -333,7 +335,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="BG"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -404,7 +406,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="eoM-yp-BOy">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" id="VGH-XL-Vya">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="8ob-9h-WcP" kind="presentation" id="svh-aE-hz5"/>
                             </connections>
@@ -525,11 +527,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ac-UL-McI">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ac-UL-McI">
                                                     <rect key="frame" x="40" y="10" width="141" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="button option">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                 </button>
                                             </subviews>
@@ -549,11 +551,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALE-Dc-tn4">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALE-Dc-tn4">
                                                     <rect key="frame" x="40" y="10" width="167" height="49"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                                     <state key="normal" title="choose app icon">
-                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="GZs-XG-EIC" kind="show" id="8UI-1v-K6q"/>
@@ -598,7 +600,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="BG"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -891,12 +893,12 @@
         <image name="btnP" width="959" height="420"/>
         <image name="btnP-1" width="704" height="176"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="checkmark.seal" catalog="system" width="128" height="122"/>
+        <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="gearGreen" width="1024" height="1024"/>
-        <image name="gearshape" width="18" height="18"/>
+        <image name="gearshape" width="14" height="14"/>
         <image name="greenapp" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BG">
             <color red="0.94099998474121094" green="0.93300002813339233" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -904,5 +906,8 @@
         <namedColor name="Green">
             <color red="0.24799999594688416" green="0.76899999380111694" blue="0.46399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
