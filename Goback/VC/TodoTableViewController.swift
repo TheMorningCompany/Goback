@@ -82,7 +82,7 @@ class TodoTableViewController: UITableViewController {
             }
             
         }
-        action.image = #imageLiteral(resourceName: "trash")
+        action.image = UIImage(systemName: "trash")?.withTintColor(UIColor(named: "Green")!, renderingMode: .alwaysOriginal)
         action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
     }
@@ -104,7 +104,7 @@ class TodoTableViewController: UITableViewController {
                 completion(false)
             }
         }
-        action.image = #imageLiteral(resourceName: "check")
+        action.image = UIImage(systemName: "checkmark")?.withTintColor(UIColor(named: "Green")!, renderingMode: .alwaysOriginal)
         action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
     }
