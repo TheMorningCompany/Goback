@@ -58,7 +58,7 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MHy-mH-O6W">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <segue destination="fR7-SH-Oyi" kind="presentation" identifier="showAddTodo" id="p0p-tM-gfK"/>
+                                <segue destination="fbo-kT-u4F" kind="presentation" identifier="showAddTodo" id="tUG-hR-GlL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,11 +76,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-at-ecg" userLabel="bg">
-                                <rect key="frame" x="18" y="18" width="378" height="553"/>
+                                <rect key="frame" x="18" y="48" width="378" height="545"/>
                                 <color key="backgroundColor" name="Elevated"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add an item to your list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-kG-cYo">
-                                <rect key="frame" x="34" y="34" width="346" height="521"/>
+                                <rect key="frame" x="34" y="64" width="346" height="513"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="14P-8Z-zVq" userLabel="segmentedCtrl">
-                                <rect key="frame" x="20" y="585" width="374" height="32"/>
+                                <rect key="frame" x="20" y="607" width="374" height="32"/>
                                 <color key="backgroundColor" name="BG"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="TfD-5V-YWM"/>
@@ -102,8 +102,8 @@
                                 <color key="tintColor" name="BG"/>
                                 <color key="selectedSegmentTintColor" name="BG"/>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU3-SM-293" userLabel="addBtn">
-                                <rect key="frame" x="18" y="630" width="378" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU3-SM-293" userLabel="addBtn" customClass="PrimaryBtn" customModule="Goback" customModuleProvider="target">
+                                <rect key="frame" x="18" y="652" width="378" height="55"/>
                                 <color key="backgroundColor" name="Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9RZ-qs-LtE"/>
@@ -119,7 +119,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGw-hc-prL">
-                                <rect key="frame" x="18" y="693" width="378" height="55"/>
+                                <rect key="frame" x="18" y="715" width="378" height="55"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="OZw-Vw-lXf"/>
@@ -140,7 +140,7 @@
                             <constraint firstItem="Zii-at-ecg" firstAttribute="trailing" secondItem="0SK-kG-cYo" secondAttribute="trailing" constant="16" id="BRx-sm-FJr"/>
                             <constraint firstItem="rNm-wO-Vdi" firstAttribute="trailing" secondItem="CGw-hc-prL" secondAttribute="trailing" constant="18" id="FH8-gy-naa"/>
                             <constraint firstItem="rNm-wO-Vdi" firstAttribute="trailing" secondItem="Zii-at-ecg" secondAttribute="trailing" constant="18" id="PvQ-UR-0bJ"/>
-                            <constraint firstItem="Zii-at-ecg" firstAttribute="top" secondItem="rNm-wO-Vdi" secondAttribute="top" constant="18" id="SZO-gM-fi6"/>
+                            <constraint firstItem="Zii-at-ecg" firstAttribute="top" secondItem="rNm-wO-Vdi" secondAttribute="top" constant="48" id="SZO-gM-fi6"/>
                             <constraint firstItem="14P-8Z-zVq" firstAttribute="top" secondItem="Zii-at-ecg" secondAttribute="bottom" constant="14" id="VVr-7a-QGJ"/>
                             <constraint firstItem="DU3-SM-293" firstAttribute="top" secondItem="14P-8Z-zVq" secondAttribute="bottom" constant="14" id="Wci-89-xyy"/>
                             <constraint firstItem="0SK-kG-cYo" firstAttribute="top" secondItem="Zii-at-ecg" secondAttribute="top" constant="16" id="Wqt-nF-RGj"/>
@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPn-3h-bq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3726.0869565217395" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="2813" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qfm-jK-EQn">
@@ -180,6 +180,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" name="BG"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
@@ -269,7 +270,7 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="hWV-HQ-l9F">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <segue destination="9Rb-NY-Ufe" kind="presentation" identifier="showAddNote" id="mDM-aU-PFd"/>
+                                <segue destination="41D-hQ-Qsw" kind="presentation" identifier="showAddNote" id="vTB-Jy-Zfo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -287,11 +288,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-iB-Lev" userLabel="bg">
-                                <rect key="frame" x="18" y="16" width="378" height="598"/>
+                                <rect key="frame" x="18" y="48" width="378" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="write a note here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
-                                <rect key="frame" x="34" y="32" width="346" height="566"/>
+                                <rect key="frame" x="34" y="64" width="346" height="590"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -300,7 +301,7 @@
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-r8-jFq">
-                                <rect key="frame" x="18" y="693" width="378" height="55"/>
+                                <rect key="frame" x="18" y="749" width="378" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="58y-tb-kie"/>
                                 </constraints>
@@ -314,8 +315,8 @@
                                     <action selector="cancel:" destination="41D-hQ-Qsw" eventType="touchUpInside" id="UbI-Mo-1Kr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn">
-                                <rect key="frame" x="18" y="630" width="378" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn" customClass="PrimaryBtn" customModule="Goback" customModuleProvider="target">
+                                <rect key="frame" x="18" y="686" width="378" height="55"/>
                                 <color key="backgroundColor" name="Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="OaN-oe-zuY"/>
@@ -341,7 +342,7 @@
                             <constraint firstItem="lqK-r8-jFq" firstAttribute="leading" secondItem="m44-5P-Nkx" secondAttribute="leading" constant="18" id="G2w-gz-gJ7"/>
                             <constraint firstItem="R0K-iB-Lev" firstAttribute="leading" secondItem="m44-5P-Nkx" secondAttribute="leading" constant="18" id="HOj-wF-ySq"/>
                             <constraint firstItem="m44-5P-Nkx" firstAttribute="trailing" secondItem="77r-Ym-fQg" secondAttribute="trailing" constant="18" id="IRQ-WE-6ci"/>
-                            <constraint firstItem="R0K-iB-Lev" firstAttribute="top" secondItem="m44-5P-Nkx" secondAttribute="top" constant="16" id="SFd-LP-SqT"/>
+                            <constraint firstItem="R0K-iB-Lev" firstAttribute="top" secondItem="m44-5P-Nkx" secondAttribute="top" constant="48" id="SFd-LP-SqT"/>
                             <constraint firstItem="77r-Ym-fQg" firstAttribute="top" secondItem="R0K-iB-Lev" secondAttribute="bottom" constant="16" id="TTN-9J-hdj"/>
                             <constraint firstItem="6Vo-sY-wFx" firstAttribute="leading" secondItem="R0K-iB-Lev" secondAttribute="leading" constant="16" id="TzM-gE-eCM"/>
                             <constraint firstItem="m44-5P-Nkx" firstAttribute="trailing" secondItem="R0K-iB-Lev" secondAttribute="trailing" constant="18" id="Xif-f9-ci7"/>
@@ -352,13 +353,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>
                     <connections>
+                        <outlet property="cancelBtn" destination="lqK-r8-jFq" id="sV0-vu-vFv"/>
                         <outlet property="doneBtn" destination="77r-Ym-fQg" id="h9l-GE-dJN"/>
                         <outlet property="noteTextView" destination="6Vo-sY-wFx" id="K49-nu-UYi"/>
+                        <outlet property="saveBtn" destination="77r-Ym-fQg" id="fsZ-1h-IDr"/>
+                        <outlet property="textFieldBG" destination="R0K-iB-Lev" id="TBA-zw-aAe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RP-tS-OIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3723.188405797102" y="705.13392857142856"/>
+            <point key="canvasLocation" x="2812" y="706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q3q-kd-iOg">
@@ -366,7 +370,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kph-M3-OOA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="rwU-vB-fHL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pTX-DW-qKC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="pTX-DW-qKC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
@@ -624,7 +628,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-We-9PR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5657.971014492754" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="4633" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cME-Od-PEs">
@@ -645,7 +649,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oB5-Ox-xDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4747.826086956522" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="3723" y="9"/>
         </scene>
         <!--App Icons View Controller-->
         <scene sceneID="q7v-el-SJx">
@@ -910,52 +914,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmN-hA-EGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6526.0869565217399" y="6.6964285714285712"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="rub-19-kap">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fR7-SH-Oyi" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zX4-5d-zkq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="BG"/>
-                        <color key="barTintColor" name="BG"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fbo-kT-u4F" kind="relationship" relationship="rootViewController" id="xA3-eG-9nm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IOA-je-2kG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2815.9420289855075" y="8.7053571428571423"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MyF-EN-GEQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Rb-NY-Ufe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qbf-hR-n1R">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="BG"/>
-                        <color key="tintColor" systemColor="labelColor"/>
-                        <color key="barTintColor" name="BG"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="41D-hQ-Qsw" kind="relationship" relationship="rootViewController" id="VNG-A6-gpm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V41-jF-VWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2813.04347826087" y="705.13392857142856"/>
+            <point key="canvasLocation" x="5501" y="9"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cxW-ky-dqC"/>
+        <segue reference="0x3-ZI-96S"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dark" width="651.66668701171875" height="651.66668701171875"/>
@@ -968,8 +931,8 @@
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="gearGreen" width="1024" height="1024"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="gearshape" width="14" height="14"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="greenapp" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
@@ -981,7 +944,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green">
-            <color red="0.30980392156862746" green="0.76862745098039209" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.31000000238418579" green="0.76899999380111694" blue="0.50599998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

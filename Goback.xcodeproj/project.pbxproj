@@ -16,6 +16,7 @@
 		003879EE2408BD7800A05C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */; };
 		003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879F62408CB3F00A05C43 /* AddTodoViewController.swift */; };
 		003879F92408CB5300A05C43 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879F82408CB5300A05C43 /* TodoTableViewController.swift */; };
+		005CC7E4254E9EF6006DCAE9 /* PrimaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */; };
 		005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */; };
 		005FAAA5240CCB350021DFF6 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */; };
 		005FAAA8240CD2E90021DFF6 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA6240CD2E90021DFF6 /* Notes.xcdatamodeld */; };
@@ -46,6 +47,7 @@
 		003879EF2408BD7800A05C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003879F62408CB3F00A05C43 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		003879F82408CB5300A05C43 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBtn.swift; sourceTree = "<group>"; };
 		005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		005FAAA7240CD2E90021DFF6 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				00D98AB1240A475200924423 /* OptionsViewController.swift */,
 				000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */,
 				003879EA2408BD7800A05C43 /* Assets.xcassets */,
+				005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */,
 				003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */,
 				003879EF2408BD7800A05C43 /* Info.plist */,
 			);
@@ -227,6 +230,7 @@
 				00B64F57254E5D4800D091AC /* TodoCellBGView.swift in Sources */,
 				006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */,
 				00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */,
+				005CC7E4254E9EF6006DCAE9 /* PrimaryBtn.swift in Sources */,
 				5D927D37240F873100C02C2E /* RSSTableViewController.swift in Sources */,
 				000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */,
 				005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */,
