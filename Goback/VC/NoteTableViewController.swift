@@ -79,7 +79,7 @@ class NoteTableViewController: UITableViewController {
             }
             
         }
-        action.image = #imageLiteral(resourceName: "trash")
+        action.image = UIImage(systemName: "trash")?.withTintColor(.green, renderingMode: .alwaysTemplate)
         action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
         

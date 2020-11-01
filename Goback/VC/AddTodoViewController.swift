@@ -10,8 +10,7 @@ import UIKit
 import CoreData
 
 class AddTodoViewController: UIViewController {
-    
-    
+
     
     //MARK: - Properties
     
@@ -19,6 +18,10 @@ class AddTodoViewController: UIViewController {
     var todo: Todo?
     
     //MARK: Outlets
+    
+    @IBOutlet weak var textViewBG: UIView!
+    @IBOutlet weak var saveBtn: UIButton!
+    @IBOutlet weak var cancelBtn: UIButton!
     
     @IBOutlet weak var textView: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -42,6 +45,13 @@ class AddTodoViewController: UIViewController {
             textView.text = todo.title
             segmentedControl.selectedSegmentIndex = Int(todo.priority)
         }
+        
+        self.textViewBG.layer.cornerRadius = 20.0
+        self.textViewBG.layer.cornerCurve = .continuous
+        self.cancelBtn.layer.cornerRadius = 20.0
+        self.cancelBtn.layer.cornerCurve = .continuous
+        self.saveBtn.layer.cornerRadius = 20.0
+        self.saveBtn.layer.cornerCurve = .continuous
     }
     
     
