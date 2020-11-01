@@ -48,6 +48,8 @@ class AddNoteViewController: UIViewController {
         self.saveBtn.layer.cornerRadius = 20.0
         self.saveBtn.layer.cornerCurve = .continuous
         
+        isModalInPresentation = true
+        
     }
     
     @objc func keyboardWillShow(with notification: Notification) {

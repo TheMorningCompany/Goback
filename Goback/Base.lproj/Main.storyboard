@@ -76,11 +76,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-at-ecg" userLabel="bg">
-                                <rect key="frame" x="18" y="48" width="378" height="545"/>
+                                <rect key="frame" x="18" y="48" width="378" height="539"/>
                                 <color key="backgroundColor" name="Elevated"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="add an item to your list" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-kG-cYo">
-                                <rect key="frame" x="34" y="64" width="346" height="513"/>
+                                <rect key="frame" x="34" y="64" width="346" height="507"/>
                                 <color key="tintColor" name="Green"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="14P-8Z-zVq" userLabel="segmentedCtrl">
-                                <rect key="frame" x="20" y="607" width="374" height="32"/>
+                                <rect key="frame" x="20" y="601" width="374" height="32"/>
                                 <color key="backgroundColor" name="BG"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="TfD-5V-YWM"/>
@@ -104,7 +104,7 @@
                                 <color key="selectedSegmentTintColor" name="Elevated"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU3-SM-293" userLabel="addBtn" customClass="PrimaryBtn" customModule="Goback" customModuleProvider="target">
-                                <rect key="frame" x="18" y="652" width="378" height="55"/>
+                                <rect key="frame" x="18" y="646" width="378" height="55"/>
                                 <color key="backgroundColor" name="Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9RZ-qs-LtE"/>
@@ -146,7 +146,7 @@
                             <constraint firstItem="14P-8Z-zVq" firstAttribute="top" secondItem="Zii-at-ecg" secondAttribute="bottom" constant="14" id="VVr-7a-QGJ"/>
                             <constraint firstItem="DU3-SM-293" firstAttribute="top" secondItem="14P-8Z-zVq" secondAttribute="bottom" constant="14" id="Wci-89-xyy"/>
                             <constraint firstItem="0SK-kG-cYo" firstAttribute="top" secondItem="Zii-at-ecg" secondAttribute="top" constant="16" id="Wqt-nF-RGj"/>
-                            <constraint firstItem="CGw-hc-prL" firstAttribute="top" secondItem="DU3-SM-293" secondAttribute="bottom" constant="8" id="aHG-Nc-KeL"/>
+                            <constraint firstItem="CGw-hc-prL" firstAttribute="top" secondItem="DU3-SM-293" secondAttribute="bottom" constant="14" id="aHG-Nc-KeL"/>
                             <constraint firstItem="Zii-at-ecg" firstAttribute="bottom" secondItem="0SK-kG-cYo" secondAttribute="bottom" constant="16" id="ga7-LE-dSH"/>
                             <constraint firstItem="Zii-at-ecg" firstAttribute="leading" secondItem="rNm-wO-Vdi" secondAttribute="leading" constant="18" id="hqE-tg-kFr"/>
                             <constraint firstItem="rNm-wO-Vdi" firstAttribute="trailing" secondItem="14P-8Z-zVq" secondAttribute="trailing" constant="20" id="iTW-pF-uWm"/>
@@ -291,11 +291,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-iB-Lev" userLabel="bg">
-                                <rect key="frame" x="18" y="48" width="378" height="622"/>
+                                <rect key="frame" x="18" y="48" width="378" height="582"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" text="write a note here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-sY-wFx">
-                                <rect key="frame" x="34" y="64" width="346" height="590"/>
+                                <rect key="frame" x="34" y="64" width="346" height="550"/>
                                 <color key="tintColor" name="Green"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
@@ -305,7 +305,7 @@
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-r8-jFq">
-                                <rect key="frame" x="18" y="749" width="378" height="55"/>
+                                <rect key="frame" x="18" y="715" width="378" height="55"/>
                                 <color key="backgroundColor" name="Elevated"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="58y-tb-kie"/>
@@ -321,7 +321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77r-Ym-fQg" userLabel="addBtn" customClass="PrimaryBtn" customModule="Goback" customModuleProvider="target">
-                                <rect key="frame" x="18" y="686" width="378" height="55"/>
+                                <rect key="frame" x="18" y="646" width="378" height="55"/>
                                 <color key="backgroundColor" name="Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="OaN-oe-zuY"/>
@@ -351,9 +351,9 @@
                             <constraint firstItem="77r-Ym-fQg" firstAttribute="top" secondItem="R0K-iB-Lev" secondAttribute="bottom" constant="16" id="TTN-9J-hdj"/>
                             <constraint firstItem="6Vo-sY-wFx" firstAttribute="leading" secondItem="R0K-iB-Lev" secondAttribute="leading" constant="16" id="TzM-gE-eCM"/>
                             <constraint firstItem="m44-5P-Nkx" firstAttribute="trailing" secondItem="R0K-iB-Lev" secondAttribute="trailing" constant="18" id="Xif-f9-ci7"/>
-                            <constraint firstAttribute="bottom" secondItem="lqK-r8-jFq" secondAttribute="bottom" constant="38" id="daw-t6-fOK"/>
+                            <constraint firstItem="m44-5P-Nkx" firstAttribute="bottom" secondItem="lqK-r8-jFq" secondAttribute="bottom" constant="38" id="daw-t6-fOK"/>
                             <constraint firstItem="6Vo-sY-wFx" firstAttribute="top" secondItem="R0K-iB-Lev" secondAttribute="top" constant="16" id="hrc-Oo-tjB"/>
-                            <constraint firstItem="lqK-r8-jFq" firstAttribute="top" secondItem="77r-Ym-fQg" secondAttribute="bottom" constant="8" id="zaI-f4-aJv"/>
+                            <constraint firstItem="lqK-r8-jFq" firstAttribute="top" secondItem="77r-Ym-fQg" secondAttribute="bottom" constant="14" id="zaI-f4-aJv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>

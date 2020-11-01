@@ -52,6 +52,8 @@ class AddTodoViewController: UIViewController {
         self.cancelBtn.layer.cornerCurve = .continuous
         self.saveBtn.layer.cornerRadius = 20.0
         self.saveBtn.layer.cornerCurve = .continuous
+        
+        isModalInPresentation = true
     }
     
     
