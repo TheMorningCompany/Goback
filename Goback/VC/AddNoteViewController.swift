@@ -68,7 +68,6 @@ class AddNoteViewController: UIViewController {
         if let note = self.note {
             note.title = title
         } else {
-            print("the error is \(String(describing: managedContextNotes))")
             let note = Notes(context: managedContextNotes)
             note.title = title
             note.date = Date()
