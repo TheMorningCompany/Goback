@@ -15,7 +15,7 @@
             <objects>
                 <tableViewController id="qaL-gt-XN0" customClass="TodoTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="zaf-9K-q9t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -72,7 +72,7 @@
             <objects>
                 <viewController id="fbo-kT-u4F" customClass="AddTodoViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZU-JI-CrH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-at-ecg" userLabel="bg">
@@ -124,6 +124,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="OZw-Vw-lXf"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="don't save" image="xmark" catalog="system">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -158,6 +159,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Y5-4U-3Qi"/>
                     <connections>
+                        <outlet property="bottomConstraint" destination="kNW-Yg-PKi" id="oFV-8s-O7N"/>
                         <outlet property="cancelBtn" destination="CGw-hc-prL" id="pIo-uX-dRC"/>
                         <outlet property="doneBtn" destination="DU3-SM-293" id="x6F-ci-efH"/>
                         <outlet property="saveBtn" destination="DU3-SM-293" id="BXr-OF-tW7"/>
@@ -227,7 +229,7 @@
             <objects>
                 <tableViewController id="InH-zb-QRm" customClass="NoteTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Jwa-3j-4V2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -284,7 +286,7 @@
             <objects>
                 <viewController id="41D-hQ-Qsw" customClass="AddNoteViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efc-6X-KRR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-iB-Lev" userLabel="bg">
@@ -353,6 +355,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ngq-lw-GuG"/>
                     <connections>
+                        <outlet property="bottomConstraint" destination="daw-t6-fOK" id="KIn-4g-weq"/>
                         <outlet property="cancelBtn" destination="lqK-r8-jFq" id="sV0-vu-vFv"/>
                         <outlet property="doneBtn" destination="77r-Ym-fQg" id="h9l-GE-dJN"/>
                         <outlet property="noteTextView" destination="6Vo-sY-wFx" id="K49-nu-UYi"/>
@@ -391,7 +394,7 @@
             <objects>
                 <tableViewController id="XxX-pM-7pU" customClass="RSSTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8x1-Ec-XA3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -486,7 +489,7 @@
             <objects>
                 <tableViewController id="6eV-aD-tsv" customClass="OptionsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lFG-ge-mL5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="tintColor" name="BG"/>
@@ -627,6 +630,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-We-9PR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -658,7 +662,7 @@
             <objects>
                 <tableViewController id="GZs-XG-EIC" customClass="AppIconsViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QV9-AJ-PcM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>

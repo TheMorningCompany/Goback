@@ -15,14 +15,6 @@ class RSSTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Hide tabBar shadow
-        self.tabBarController!.tabBar.layer.borderWidth = 0.50
-        self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
-        self.tabBarController?.tabBar.clipsToBounds = true
-        self.navigationController!.navigationBar.layer.borderWidth = 0.50
-        self.navigationController!.navigationBar.layer.borderColor = UIColor.clear.cgColor
-        self.navigationController?.navigationBar.clipsToBounds = true
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
