@@ -16,6 +16,7 @@ class AddTodoViewController: UIViewController {
     
     var managedContext: NSManagedObjectContext!
     var todo: Todo?
+    var color = "Default"
     
     //MARK: Outlets
     
@@ -54,6 +55,8 @@ class AddTodoViewController: UIViewController {
         self.saveBtn.layer.cornerCurve = .continuous
         
         isModalInPresentation = true
+        
+        color = "Default"
     }
     
     
@@ -86,16 +89,16 @@ class AddTodoViewController: UIViewController {
         guard let title = textView.text, !title.isEmpty else {
             return
         }
-        
-        
         if let todo = self.todo {
             todo.title = title
             todo.priority = Int16(segmentedControl.selectedSegmentIndex)
+            todo.color = color
         } else {
             let todo = Todo(context: managedContext)
             todo.title = title
             todo.priority = Int16(segmentedControl.selectedSegmentIndex)
             todo.date = Date()
+            todo.color = color
         }
         do {
             try managedContext.save()
@@ -104,9 +107,30 @@ class AddTodoViewController: UIViewController {
             print("error saving todo\(error)")
         }
         
-        
-        
     }
+    
+    @IBAction func cellColorElevated(_ sender: Any) {
+        color = "Default"
+    }
+    @IBAction func cellColorPink(_ sender: Any) {
+        color = "Pink"
+    }
+    @IBAction func cellColorOrange(_ sender: Any) {
+        color = "Orange"
+    }
+    @IBAction func cellColorYellow(_ sender: Any) {
+        color = "Yellow"
+    }
+    @IBAction func cellColorGreen(_ sender: Any) {
+        color = "Green"
+    }
+    @IBAction func cellColorBlue(_ sender: Any) {
+        color = "Blue"
+    }
+    @IBAction func cellColorPurple(_ sender: Any) {
+        color = "Purple"
+    }
+    
 }
 extension AddTodoViewController: UITextViewDelegate {
     func textViewDidChangeSelection(_ textView: UITextView) {

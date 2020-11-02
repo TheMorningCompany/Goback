@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class TodoTableViewController: UITableViewController {
+  
     
     let notification = UINotificationFeedbackGenerator()//Haptics
     
@@ -53,6 +54,7 @@ class TodoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
+        cell.textLabel?.textColor = UIColor(named: todo.color!)
         cell.textLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: UIFont.labelFontSize)
         return cell
     }

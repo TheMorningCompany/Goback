@@ -12,6 +12,7 @@ class ColorCellChooserView: UIView {
 
     override func awakeFromNib() {
         layer.cornerRadius = frame.size.height / 2
+        
     }
 
 }
