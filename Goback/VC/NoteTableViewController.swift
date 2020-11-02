@@ -58,6 +58,7 @@ class NoteTableViewController: UITableViewController {
     
     // MARK: TableViewDelelgate
 
+    //DELETE
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
             let note = self.resultsControllerNotes.object(at: indexPath)
@@ -76,6 +77,17 @@ class NoteTableViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [action])
         
     }
+    //OPEN
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Open") { (action, view, completion) in
+            self.performSegue(withIdentifier: "showAddNote", sender: tableView.cellForRow(at: indexPath))
+        }
+        action.image = UIImage(systemName: "text.cursor")?.withTintColor(UIColor(named: "Green")!, renderingMode: .alwaysOriginal)
+        action.backgroundColor = UIColor(named: "BG")
+        return UISwipeActionsConfiguration(actions: [action])
+    }
+
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showAddNote", sender: tableView.cellForRow(at: indexPath))
