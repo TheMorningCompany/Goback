@@ -10,6 +10,8 @@ import UIKit
 
 class OptionsViewController: UITableViewController {
     
+    @IBOutlet weak var titleBG: UIView!
+    
     var impact = UIImpactFeedbackGenerator()
     
     override func viewDidLoad() {
@@ -20,6 +22,11 @@ class OptionsViewController: UITableViewController {
         self.navigationController?.navigationBar.clipsToBounds = true
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
+        
+        //Round Header BG
+        self.titleBG.layer.cornerRadius = 20.0
+        self.titleBG.layer.cornerCurve = .continuous
+        titleBG.layer.masksToBounds = true
     }
     
     

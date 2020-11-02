@@ -55,7 +55,7 @@ class TodoTableViewController: UITableViewController {
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
         cell.textLabel?.textColor = UIColor(named: todo.color!)
-        cell.textLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: UIFont.labelFontSize)
+        cell.textLabel?.font = UIFont(name: "AvenirNext-Bold", size: UIFont.labelFontSize)
         return cell
     }
     
