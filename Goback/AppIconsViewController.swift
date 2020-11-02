@@ -9,13 +9,18 @@
 import UIKit
 
 class AppIconsViewController: UITableViewController {
+  
+    @IBOutlet weak var titleBG: UIView!
     
     var impact = UIImpactFeedbackGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //Round Header BG
+        self.titleBG.layer.cornerRadius = 20.0
+        self.titleBG.layer.cornerCurve = .continuous
+        titleBG.layer.masksToBounds = true
     }
     
     func doHaptic() {

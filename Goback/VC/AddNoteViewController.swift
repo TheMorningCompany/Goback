@@ -73,6 +73,10 @@ class AddNoteViewController: UIViewController {
     
     
     @IBAction func save(_ sender: Any) {
+        if noteTextView.text == "" {
+            noteTextView.text = " "
+        }
+        
         guard let title = noteTextView.text, !title.isEmpty else {
             return
         }
