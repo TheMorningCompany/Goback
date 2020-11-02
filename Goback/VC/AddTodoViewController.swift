@@ -20,12 +20,13 @@ class AddTodoViewController: UIViewController {
     
     //MARK: Outlets
     
+    @IBOutlet weak var iconBtn: UIButton!
+    @IBOutlet weak var colorBtn: UIButton!
     @IBOutlet weak var textViewBG: UIView!
     @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
     
     @IBOutlet weak var textView: UITextField!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
@@ -33,7 +34,6 @@ class AddTodoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentedControl.backgroundColor = UIColor(named: "BG")
         NotificationCenter.default.addObserver(self, selector:
             #selector(keyboardWillShow),
             name: UIResponder.keyboardWillShowNotification,
@@ -44,15 +44,16 @@ class AddTodoViewController: UIViewController {
         if let todo = todo {
             textView.text = todo.title
             textView.text = todo.title
-            segmentedControl.selectedSegmentIndex = Int(todo.priority)
         }
         
         self.textViewBG.layer.cornerRadius = 20.0
         self.textViewBG.layer.cornerCurve = .continuous
-        self.cancelBtn.layer.cornerRadius = 20.0
-        self.cancelBtn.layer.cornerCurve = .continuous
         self.saveBtn.layer.cornerRadius = 20.0
         self.saveBtn.layer.cornerCurve = .continuous
+        self.iconBtn.layer.cornerRadius = 20.0
+        self.iconBtn.layer.cornerCurve = .continuous
+        self.colorBtn.layer.cornerRadius = 20.0
+        self.colorBtn.layer.cornerCurve = .continuous
         
         isModalInPresentation = true
         
@@ -91,12 +92,10 @@ class AddTodoViewController: UIViewController {
         }
         if let todo = self.todo {
             todo.title = title
-            todo.priority = Int16(segmentedControl.selectedSegmentIndex)
             todo.color = color
         } else {
             let todo = Todo(context: managedContext)
             todo.title = title
-            todo.priority = Int16(segmentedControl.selectedSegmentIndex)
             todo.date = Date()
             todo.color = color
         }

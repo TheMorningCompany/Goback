@@ -43,8 +43,6 @@ class AddNoteViewController: UIViewController {
         
         self.textFieldBG.layer.cornerRadius = 20.0
         self.textFieldBG.layer.cornerCurve = .continuous
-        self.cancelBtn.layer.cornerRadius = 20.0
-        self.cancelBtn.layer.cornerCurve = .continuous
         self.saveBtn.layer.cornerRadius = 20.0
         self.saveBtn.layer.cornerCurve = .continuous
         
