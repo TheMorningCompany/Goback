@@ -23,6 +23,7 @@
 		005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */; };
 		006F41CD240A30E30051AA5C /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CB240A30E30051AA5C /* Todos.xcdatamodeld */; };
 		006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */; };
+		00B45D0D254FA5D100813EB6 /* ColorCellChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */; };
 		00B64F57254E5D4800D091AC /* TodoCellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B64F56254E5D4800D091AC /* TodoCellBGView.swift */; };
 		00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D98AB1240A475200924423 /* OptionsViewController.swift */; };
 		00D98AB9240A476C00924423 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB4240A476C00924423 /* fade@2x.png */; };
@@ -54,6 +55,7 @@
 		005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackNotes.swift; sourceTree = "<group>"; };
 		006F41CC240A30E30051AA5C /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
 		006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTodo.swift; sourceTree = "<group>"; };
+		00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCellChooserView.swift; sourceTree = "<group>"; };
 		00B64F56254E5D4800D091AC /* TodoCellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCellBGView.swift; sourceTree = "<group>"; };
 		00D98AB1240A475200924423 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		00D98AB4240A476C00924423 /* fade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fade@2x.png"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				003879E32408BD7700A05C43 /* SceneDelegate.swift */,
 				003879E52408BD7700A05C43 /* ViewController.swift */,
 				003879E72408BD7700A05C43 /* Main.storyboard */,
+				00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */,
 				00B64F56254E5D4800D091AC /* TodoCellBGView.swift */,
 				5D927D36240F873100C02C2E /* RSSTableViewController.swift */,
 				5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */,
@@ -230,6 +233,7 @@
 				00B64F57254E5D4800D091AC /* TodoCellBGView.swift in Sources */,
 				006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */,
 				00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */,
+				00B45D0D254FA5D100813EB6 /* ColorCellChooserView.swift in Sources */,
 				005CC7E4254E9EF6006DCAE9 /* PrimaryBtn.swift in Sources */,
 				5D927D37240F873100C02C2E /* RSSTableViewController.swift in Sources */,
 				000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */,
