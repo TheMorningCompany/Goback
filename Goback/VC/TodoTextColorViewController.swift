@@ -36,45 +36,46 @@ class TodoTextColorViewController: UIViewController {
     @IBAction func defaultColor(_ sender: Any) {
         color = "Default"
         dismiss(animated: true)
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func pinkColor(_ sender: Any) {
         color = "Pink"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func orangeColor(_ sender: Any) {
         color = "Orange"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func yellowColor(_ sender: Any) {
         color = "Yello"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func greenColor(_ sender: Any) {
         color = "Green"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func blueColor(_ sender: Any) {
         color = "Blue"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func darkblueColor(_ sender: Any) {
         color = "DarkBlue"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func purpleColor(_ sender: Any) {
         color = "Purple"
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true)
-
+        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     
 }

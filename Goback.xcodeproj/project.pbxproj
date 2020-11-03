@@ -16,6 +16,7 @@
 		003879EE2408BD7800A05C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */; };
 		003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879F62408CB3F00A05C43 /* AddTodoViewController.swift */; };
 		003879F92408CB5300A05C43 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879F82408CB5300A05C43 /* TodoTableViewController.swift */; };
+		0056050F25520F7100268F5B /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0056050E25520F7100268F5B /* NotificationConstants.swift */; };
 		005CC7E4254E9EF6006DCAE9 /* PrimaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */; };
 		005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */; };
 		005FAAA5240CCB350021DFF6 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */; };
@@ -53,6 +54,7 @@
 		003879F62408CB3F00A05C43 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		003879F82408CB5300A05C43 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		005605052552055B00268F5B /* Goback.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goback.entitlements; sourceTree = "<group>"; };
+		0056050E25520F7100268F5B /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
 		005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBtn.swift; sourceTree = "<group>"; };
 		005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				003879E32408BD7700A05C43 /* SceneDelegate.swift */,
 				003879E52408BD7700A05C43 /* ViewController.swift */,
 				003879E72408BD7700A05C43 /* Main.storyboard */,
+				0056050E25520F7100268F5B /* NotificationConstants.swift */,
 				0095B8E325507D9B00A542C9 /* TextColorBtn.swift */,
 				00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */,
 				00B64F56254E5D4800D091AC /* TodoCellBGView.swift */,
@@ -262,6 +265,7 @@
 				5D927D3B240F92F500C02C2E /* RSSFeedTableViewCell.swift in Sources */,
 				005FAAA5240CCB350021DFF6 /* NoteTableViewController.swift in Sources */,
 				5D927D3C240F937A00C02C2E /* FeedParser.swift in Sources */,
+				0056050F25520F7100268F5B /* NotificationConstants.swift in Sources */,
 				003879F92408CB5300A05C43 /* TodoTableViewController.swift in Sources */,
 				003879E62408BD7700A05C43 /* ViewController.swift in Sources */,
 				003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */,

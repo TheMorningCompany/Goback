@@ -16,7 +16,7 @@ class AddTodoViewController: UIViewController {
     
     var managedContext: NSManagedObjectContext!
     var todo: Todo?
-    var color = "Default"
+    var TextColor = "Default"
     
     //MARK: Outlets
     
@@ -57,7 +57,17 @@ class AddTodoViewController: UIViewController {
         
         isModalInPresentation = true
         
-        color = "Default"
+//        NotificationCenter.default.addObserver(forName: COLORFORFIELD_NOTIFICATION, object: nil, queue: nil) { notification in
+//            print("color recieved")
+//            self.textView.textColor = UIColor(named: "\(notification.object as? String)")
+//        }
+        
+        
+        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
+            print("color recieved")
+            self.TextColor = notification.object as! String
+            self.textView.textColor = UIColor(named: "\(notification.object as! String)")
+        }
     }
     
     
@@ -87,12 +97,12 @@ class AddTodoViewController: UIViewController {
         }
         if let todo = self.todo {
             todo.title = title
-            todo.color = color
+            todo.color = TextColor
         } else {
             let todo = Todo(context: managedContext)
             todo.title = title
             todo.date = Date()
-            todo.color = color
+            todo.color = TextColor
         }
         do {
             try managedContext.save()
