@@ -12,6 +12,17 @@ class TodoTextColorViewController: UIViewController {
   
     @IBOutlet weak var titleBG: UIView!
     
+    @IBOutlet weak var defaultView: TextColorBtn!
+    @IBOutlet weak var pinkView: TextColorBtn!
+    @IBOutlet weak var orangeView: TextColorBtn!
+    @IBOutlet weak var yellowView: TextColorBtn!
+    @IBOutlet weak var greenView: TextColorBtn!
+    @IBOutlet weak var blueView: TextColorBtn!
+    @IBOutlet weak var darkblueView: TextColorBtn!
+    @IBOutlet weak var purpleView: TextColorBtn!
+    
+    var color = "Default"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +30,51 @@ class TodoTextColorViewController: UIViewController {
         self.titleBG.layer.cornerRadius = 20.0
         self.titleBG.layer.cornerCurve = .continuous
         titleBG.layer.masksToBounds = true
+    
     }
 
+    @IBAction func defaultColor(_ sender: Any) {
+        color = "Default"
+        dismiss(animated: true)
+    }
+    @IBAction func pinkColor(_ sender: Any) {
+        color = "Pink"
+        dismiss(animated: true)
 
+    }
+    @IBAction func orangeColor(_ sender: Any) {
+        color = "Orange"
+        dismiss(animated: true)
+
+    }
+    @IBAction func yellowColor(_ sender: Any) {
+        color = "Yello"
+        dismiss(animated: true)
+
+    }
+    @IBAction func greenColor(_ sender: Any) {
+        color = "Green"
+        dismiss(animated: true)
+
+    }
+    @IBAction func blueColor(_ sender: Any) {
+        color = "Blue"
+        dismiss(animated: true)
+
+    }
+    @IBAction func darkblueColor(_ sender: Any) {
+        color = "DarkBlue"
+        dismiss(animated: true)
+
+    }
+    @IBAction func purpleColor(_ sender: Any) {
+        color = "Purple"
+        dismiss(animated: true)
+
+    }
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true)
+
+    }
+    
 }

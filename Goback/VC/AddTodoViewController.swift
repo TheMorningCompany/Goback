@@ -65,14 +65,9 @@ class AddTodoViewController: UIViewController {
     //MARK: Actions
     
     @objc func keyboardWillShow(with notification: Notification) {
-        let key = "UIKeyboardFrameEndUserInfoKey"
-        guard let keyboardFrame = notification.userInfo?[key] as? NSValue else { return }
-        let keyboardHeight = keyboardFrame.cgRectValue.height
-        bottomConstraint.constant = keyboardHeight
-        
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
+//        let key = "UIKeyboardFrameEndUserInfoKey"
+//        guard let keyboardFrame = notification.userInfo?[key] as? NSValue else { return }
+//        let keyboardHeight = keyboardFrame.cgRectValue.height
         
     }
     
@@ -128,6 +123,14 @@ class AddTodoViewController: UIViewController {
     }
     @IBAction func cellColorPurple(_ sender: Any) {
         color = "Purple"
+    }
+    
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        if textView.isFirstResponder{
+            textView.resignFirstResponder()
+            dismissKeyboard(self)
+        }
+        
     }
     
 }

@@ -51,15 +51,10 @@ class AddNoteViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(with notification: Notification) {
-        let key = "UIKeyboardFrameEndUserInfoKey"
-        guard let keyboardFrame = notification.userInfo?[key] as? NSValue else { return }
-        let keyboardHeight = keyboardFrame.cgRectValue.height
-        bottomConstraint.constant = keyboardHeight
-        
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
-        
+//        let key = "UIKeyboardFrameEndUserInfoKey"
+//        guard let keyboardFrame = notification.userInfo?[key] as? NSValue else { return }
+//        let keyboardHeight = keyboardFrame.cgRectValue.height
+
     }
    
     fileprivate func dismissAndResign() {
