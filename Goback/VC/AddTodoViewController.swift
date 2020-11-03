@@ -102,29 +102,7 @@ class AddTodoViewController: UIViewController {
         }
         
     }
-    
-    @IBAction func cellColorElevated(_ sender: Any) {
-        color = "Default"
-    }
-    @IBAction func cellColorPink(_ sender: Any) {
-        color = "Pink"
-    }
-    @IBAction func cellColorOrange(_ sender: Any) {
-        color = "Orange"
-    }
-    @IBAction func cellColorYellow(_ sender: Any) {
-        color = "Yellow"
-    }
-    @IBAction func cellColorGreen(_ sender: Any) {
-        color = "Green"
-    }
-    @IBAction func cellColorBlue(_ sender: Any) {
-        color = "Blue"
-    }
-    @IBAction func cellColorPurple(_ sender: Any) {
-        color = "Purple"
-    }
-    
+
     @IBAction func dismissKeyboard(_ sender: Any) {
         if textView.isFirstResponder{
             textView.resignFirstResponder()
