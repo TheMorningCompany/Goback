@@ -30,7 +30,7 @@ class RSSTableViewController: UITableViewController, XMLParserDelegate {
     
     func fetchData() {
         let feedParser = FeedParser()
-        feedParser.parseFeed(url: "https://developer.apple.com/news/rss/news.rss") { (rssItems) in
+        feedParser.parseFeed(url: "https://www.apple.com/newsroom/rss-feed.rss") { (rssItems) in
             self.rssItems = rssItems
             
             OperationQueue.main.addOperation {
