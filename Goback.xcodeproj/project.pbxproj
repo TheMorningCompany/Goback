@@ -24,6 +24,7 @@
 		005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */; };
 		006F41CD240A30E30051AA5C /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CB240A30E30051AA5C /* Todos.xcdatamodeld */; };
 		006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */; };
+		008D0C422554692200C68A11 /* RSSSubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */; };
 		0095B8E425507D9B00A542C9 /* TextColorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095B8E325507D9B00A542C9 /* TextColorBtn.swift */; };
 		009788C7254FE14E008C9FD7 /* GradientTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */; };
 		00A5607F254FCDAB0009AB28 /* GradientTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5607E254FCDAB0009AB28 /* GradientTitleBar.swift */; };
@@ -62,6 +63,7 @@
 		005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackNotes.swift; sourceTree = "<group>"; };
 		006F41CC240A30E30051AA5C /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
 		006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTodo.swift; sourceTree = "<group>"; };
+		008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSSubscribeViewController.swift; sourceTree = "<group>"; };
 		0095B8E325507D9B00A542C9 /* TextColorBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColorBtn.swift; sourceTree = "<group>"; };
 		009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTitleViewController.swift; sourceTree = "<group>"; };
 		00A5607E254FCDAB0009AB28 /* GradientTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTitleBar.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */,
 				00C14EE82550794F0091E818 /* TodoTextColorViewController.swift */,
 				003879F82408CB5300A05C43 /* TodoTableViewController.swift */,
+				008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */,
 				005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */,
 				005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */,
 			);
@@ -271,6 +274,7 @@
 				003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */,
 				005FAAA8240CD2E90021DFF6 /* Notes.xcdatamodeld in Sources */,
 				003879E42408BD7700A05C43 /* SceneDelegate.swift in Sources */,
+				008D0C422554692200C68A11 /* RSSSubscribeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

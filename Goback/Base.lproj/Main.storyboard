@@ -637,7 +637,7 @@
             <objects>
                 <tableViewController id="XxX-pM-7pU" customClass="RSSTableViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="8x1-Ec-XA3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="separatorColor" name="BG"/>
@@ -707,7 +707,7 @@
                             </connections>
                         </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="lEX-S0-T57">
-                            <rect key="frame" x="-4" y="0.0" width="9" height="33"/>
+                            <rect key="frame" x="94.5" y="5.5" width="131" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" name="BG"/>
                             <segments>
@@ -728,10 +728,10 @@
             </objects>
             <point key="canvasLocation" x="1925.625" y="-707.74647887323943"/>
         </scene>
-        <!--View Controller-->
+        <!--Subscribe View Controller-->
         <scene sceneID="ULR-DI-l6s">
             <objects>
-                <viewController id="T52-CO-Y77" sceneMemberID="viewController">
+                <viewController id="T52-CO-Y77" customClass="RSSSubscribeViewController" customModule="Goback" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rKi-ML-MaX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="492"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -739,8 +739,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYo-9H-WRo" userLabel="bg">
                                 <rect key="frame" x="18" y="243" width="284" height="90"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="put your url here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i7-IR-iQe">
-                                        <rect key="frame" x="12" y="8" width="260" height="74"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter your url here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i7-IR-iQe">
+                                        <rect key="frame" x="16" y="8" width="256" height="74"/>
+                                        <color key="tintColor" name="Green"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -748,7 +749,7 @@
                                 <color key="backgroundColor" name="Elevated"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="7i7-IR-iQe" firstAttribute="leading" secondItem="bYo-9H-WRo" secondAttribute="leading" constant="12" id="1Ts-ik-Gow"/>
+                                    <constraint firstItem="7i7-IR-iQe" firstAttribute="leading" secondItem="bYo-9H-WRo" secondAttribute="leading" constant="16" id="1Ts-ik-Gow"/>
                                     <constraint firstAttribute="trailing" secondItem="7i7-IR-iQe" secondAttribute="trailing" constant="12" id="JbC-YK-YZS"/>
                                     <constraint firstItem="7i7-IR-iQe" firstAttribute="top" secondItem="bYo-9H-WRo" secondAttribute="top" constant="8" id="TkC-Uu-Jtu"/>
                                     <constraint firstAttribute="height" constant="90" id="dqQ-ff-8RG"/>
@@ -797,7 +798,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="OMO-nt-5bb">
                         <barButtonItem key="backBarButtonItem" title=" " id="Ghj-t6-Kfr"/>
+                        <barButtonItem key="rightBarButtonItem" image="xmark" catalog="system" id="var-LN-NdR">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="dismiss" destination="T52-CO-Y77" id="RUd-xJ-7rK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textBG" destination="bYo-9H-WRo" id="aFO-fk-Sm3"/>
+                        <outlet property="titleBG" destination="far-7U-Z6x" id="jZr-od-DdT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUc-fr-Tya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -806,7 +817,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1Yd-f2-hgc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="SoG-wL-PJe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SoG-wL-PJe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="hAU-yB-Aoa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SMw-60-w2F">
@@ -818,7 +829,6 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="b3G-vj-pUN">
-                        <rect key="frame" x="0.0" y="475" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="BG"/>
                         <color key="barTintColor" name="BG"/>
@@ -1399,8 +1409,8 @@
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="colorPicker" width="16" height="13"/>
         <image name="dot.radiowaves.right" catalog="system" width="110" height="128"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="gearshape" width="14" height="14"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.stack.badge.plus" catalog="system" width="128" height="122"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
