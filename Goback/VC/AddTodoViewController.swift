@@ -57,17 +57,44 @@ class AddTodoViewController: UIViewController {
         
         isModalInPresentation = true
         
-//        NotificationCenter.default.addObserver(forName: COLORFORFIELD_NOTIFICATION, object: nil, queue: nil) { notification in
-//            print("color recieved")
-//            self.textView.textColor = UIColor(named: "\(notification.object as? String)")
-//        }
-        
-        
-        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
+        NotificationCenter.default.addObserver(forName: COLORFORFIELD_NOTIFICATION, object: nil, queue: nil) { notification in
             print("color recieved")
-            self.TextColor = notification.object as! String
-            self.textView.textColor = UIColor(named: "\(notification.object as! String)")
+            
+            let colorObject = notification.object as? String
+            print("color object is \(String(describing: colorObject))")
+            
+            if ((colorObject?.contains("Orange")) != nil) {
+                self.textView.textColor = UIColor(named: "Orange")
+            }
+            if ((colorObject?.contains("Yellow")) != nil) {
+                self.textView.textColor = UIColor(named: "Yellow")
+            }
+            if ((colorObject?.contains("Blue")) != nil) {
+                self.textView.textColor = UIColor(named: "Blue")
+            }
+            if ((colorObject?.contains("DarkBlue")) != nil) {
+                self.textView.textColor = UIColor(named: "DarkBlue")
+            }
+            if ((colorObject?.contains("Default")) != nil) {
+                self.textView.textColor = UIColor(named: "Default")
+            }
+            if ((colorObject?.contains("Pink")) != nil) {
+                self.textView.textColor = UIColor(named: "Pink")
+            }
+            if ((colorObject?.contains("Purple")) != nil) {
+                self.textView.textColor = UIColor(named: "Purple")
+            }
+            if ((colorObject?.contains("Green")) != nil) {
+                self.textView.textColor = UIColor(named: "Green")
+            }
         }
+        
+        
+//        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
+//            print("color recieved")
+//            self.TextColor = notification.object as! String
+//            self.textView.textColor = UIColor(named: "\(notification.object as! String)")
+//        }
     }
     
     

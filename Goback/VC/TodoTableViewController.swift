@@ -82,8 +82,8 @@ class TodoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("THE THING IS \(tableView.cell.textColor)")
-//        NotificationCenter.default.post(name: COLORFORFIELD_NOTIFICATION, object: tableView.cellForRow(at: indexPath)?.textLabel?.textColor)
+        print("THE THING IS \(String(describing: tableView.cellForRow(at: indexPath)?.textLabel?.textColor))")
+        NotificationCenter.default.post(name: COLORFORFIELD_NOTIFICATION, object: tableView.cellForRow(at: indexPath)?.textLabel?.textColor)
         performSegue(withIdentifier: "showAddTodo", sender: tableView.cellForRow(at: indexPath))
 
     }
