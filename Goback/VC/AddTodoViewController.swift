@@ -31,6 +31,7 @@ class AddTodoViewController: UIViewController {
     
     var TodoTextColor = "Default"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector:
@@ -56,11 +57,13 @@ class AddTodoViewController: UIViewController {
         
         isModalInPresentation = true
         
+        //Notification for when the color picker closes
         NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
             print("color received")
             self.textView.textColor = UIColor(named: notification.object as! String)
             self.TodoTextColor = notification.object as! String
         }
+
     }
     
     

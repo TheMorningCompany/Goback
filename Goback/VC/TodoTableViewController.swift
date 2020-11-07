@@ -19,6 +19,7 @@ class TodoTableViewController: UITableViewController {
     var resultsController: NSFetchedResultsController<Todo>!
     let coreDataStack = CoreDataStack()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,8 +89,9 @@ class TodoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
-            let todo = self.resultsController.object(at: indexPath)
-            self.resultsController.managedObjectContext.delete(todo)
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.textLabel?.textColor = UIColor(named: "Completed")
+            
             self.notification.notificationOccurred(.success)//Haptic
             do {
                 try self.resultsController.managedObjectContext.save()
