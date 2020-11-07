@@ -16,7 +16,6 @@ class AddTodoViewController: UIViewController {
     
     var managedContext: NSManagedObjectContext!
     var todo: Todo?
-    var TextColor = "Default"
     
     //MARK: Outlets
     
@@ -30,7 +29,7 @@ class AddTodoViewController: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
-    
+    var TodoTextColor = "Default"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,44 +56,11 @@ class AddTodoViewController: UIViewController {
         
         isModalInPresentation = true
         
-        NotificationCenter.default.addObserver(forName: COLORFORFIELD_NOTIFICATION, object: nil, queue: nil) { notification in
-            print("color recieved")
-            
-            let colorObject = notification.object as? String
-            print("color object is \(String(describing: colorObject))")
-            
-            if ((colorObject?.contains("Orange")) != nil) {
-                self.textView.textColor = UIColor(named: "Orange")
-            }
-            if ((colorObject?.contains("Yellow")) != nil) {
-                self.textView.textColor = UIColor(named: "Yellow")
-            }
-            if ((colorObject?.contains("Blue")) != nil) {
-                self.textView.textColor = UIColor(named: "Blue")
-            }
-            if ((colorObject?.contains("DarkBlue")) != nil) {
-                self.textView.textColor = UIColor(named: "DarkBlue")
-            }
-            if ((colorObject?.contains("Default")) != nil) {
-                self.textView.textColor = UIColor(named: "Default")
-            }
-            if ((colorObject?.contains("Pink")) != nil) {
-                self.textView.textColor = UIColor(named: "Pink")
-            }
-            if ((colorObject?.contains("Purple")) != nil) {
-                self.textView.textColor = UIColor(named: "Purple")
-            }
-            if ((colorObject?.contains("Green")) != nil) {
-                self.textView.textColor = UIColor(named: "Green")
-            }
+        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
+            print("color received")
+            self.textView.textColor = UIColor(named: notification.object as! String)
+            self.TodoTextColor = notification.object as! String
         }
-        
-        
-//        NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
-//            print("color recieved")
-//            self.TextColor = notification.object as! String
-//            self.textView.textColor = UIColor(named: "\(notification.object as! String)")
-//        }
     }
     
     
@@ -124,12 +90,12 @@ class AddTodoViewController: UIViewController {
         }
         if let todo = self.todo {
             todo.title = title
-            todo.color = TextColor
+            todo.color = TodoTextColor
         } else {
             let todo = Todo(context: managedContext)
             todo.title = title
             todo.date = Date()
-            todo.color = TextColor
+            todo.color = TodoTextColor
         }
         do {
             try managedContext.save()

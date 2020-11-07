@@ -49,7 +49,7 @@ class TodoTextColorViewController: UIViewController {
         NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
     @IBAction func yellowColor(_ sender: Any) {
-        color = "Yello"
+        color = "Yellow"
         dismiss(animated: true)
         NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
     }
@@ -75,7 +75,7 @@ class TodoTextColorViewController: UIViewController {
     }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true)
-        NotificationCenter.default.post(name: COLOR_NOTIFICATION, object: color)
+        
     }
     
 }

@@ -54,8 +54,8 @@ class TodoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
-        cell.textLabel?.textColor = UIColor(named: todo.color!)
         cell.textLabel?.font = UIFont(name: "AvenirNext-Bold", size: UIFont.labelFontSize)
+        cell.textLabel?.textColor = UIColor(named: todo.color!)
         return cell
     }
     
@@ -82,8 +82,6 @@ class TodoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("THE THING IS \(String(describing: tableView.cellForRow(at: indexPath)?.textLabel?.textColor))")
-        NotificationCenter.default.post(name: COLORFORFIELD_NOTIFICATION, object: tableView.cellForRow(at: indexPath)?.textLabel?.textColor)
         performSegue(withIdentifier: "showAddTodo", sender: tableView.cellForRow(at: indexPath))
 
     }
@@ -146,6 +144,7 @@ extension TodoTableViewController: NSFetchedResultsControllerDelegate {
             if let indexPath = indexPath, let cell = tableView.cellForRow(at: indexPath) {
                 let todo = resultsController.object(at: indexPath)
                 cell.textLabel?.text = todo.title
+                cell.textLabel?.textColor = UIColor(named: todo.color!)
             }
         default:
             break
