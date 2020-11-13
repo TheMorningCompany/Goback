@@ -19,7 +19,6 @@ class AddTodoViewController: UIViewController {
     
     //MARK: Outlets
     
-    @IBOutlet weak var iconBtn: UIButton!
     @IBOutlet weak var colorBtn: UIButton!
     @IBOutlet weak var textViewBG: UIView!
     @IBOutlet weak var saveBtn: UIButton!
@@ -50,8 +49,6 @@ class AddTodoViewController: UIViewController {
         self.textViewBG.layer.cornerCurve = .continuous
         self.saveBtn.layer.cornerRadius = 20.0
         self.saveBtn.layer.cornerCurve = .continuous
-        self.iconBtn.layer.cornerRadius = 20.0
-        self.iconBtn.layer.cornerCurve = .continuous
         self.colorBtn.layer.cornerRadius = 20.0
         self.colorBtn.layer.cornerCurve = .continuous
         
