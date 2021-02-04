@@ -45,10 +45,13 @@ class TodoTableViewController: UITableViewController {
         } catch {
             print("perform fetch error: \(error)")
         }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return resultsController.sections?[section].numberOfObjects ?? 0
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,6 +71,7 @@ class TodoTableViewController: UITableViewController {
             let todo = self.resultsController.object(at: indexPath)
             self.resultsController.managedObjectContext.delete(todo)
             self.notification.notificationOccurred(.error)//Haptic
+            
             do {
                 try self.resultsController.managedObjectContext.save()
                 completion(true)
@@ -87,6 +91,8 @@ class TodoTableViewController: UITableViewController {
 
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
             let cell = tableView.cellForRow(at: indexPath)
@@ -105,6 +111,9 @@ class TodoTableViewController: UITableViewController {
         action.backgroundColor = UIColor(named: "BG")
         return UISwipeActionsConfiguration(actions: [action])
     }
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let _ = sender as? UIBarButtonItem, let vc = segue.destination as? AddTodoViewController {
             vc.managedContext = resultsController.managedObjectContext
