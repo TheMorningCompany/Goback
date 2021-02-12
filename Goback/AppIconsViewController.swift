@@ -17,10 +17,6 @@ class AppIconsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Round Header BG
-        self.titleBG.layer.cornerRadius = 20.0
-        self.titleBG.layer.cornerCurve = .continuous
-        titleBG.layer.masksToBounds = true
     }
     
     func doHaptic() {

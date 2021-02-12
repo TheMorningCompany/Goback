@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "green@2x.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "green@2x@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "green@2x@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "Suite2021-3.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

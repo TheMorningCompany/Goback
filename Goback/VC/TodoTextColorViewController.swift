@@ -8,18 +8,10 @@
 
 import UIKit
 
-class TodoTextColorViewController: UIViewController {
+class TodoTextColorViewController: UITableViewController {
   
     @IBOutlet weak var titleBG: UIView!
     
-    @IBOutlet weak var defaultView: TextColorBtn!
-    @IBOutlet weak var pinkView: TextColorBtn!
-    @IBOutlet weak var orangeView: TextColorBtn!
-    @IBOutlet weak var yellowView: TextColorBtn!
-    @IBOutlet weak var greenView: TextColorBtn!
-    @IBOutlet weak var blueView: TextColorBtn!
-    @IBOutlet weak var darkblueView: TextColorBtn!
-    @IBOutlet weak var purpleView: TextColorBtn!
     
     var color = "Default"
     

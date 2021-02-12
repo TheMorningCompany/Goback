@@ -11,7 +11,7 @@ import UIKit
 class TextColorBtn: UIButton {
 
     override func awakeFromNib() {
-        layer.cornerRadius = 20.0
+        layer.cornerRadius = 14
         layer.cornerCurve = .continuous
     }
 

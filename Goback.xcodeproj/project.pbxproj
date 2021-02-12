@@ -32,7 +32,6 @@
 		00B64F57254E5D4800D091AC /* TodoCellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B64F56254E5D4800D091AC /* TodoCellBGView.swift */; };
 		00C14EE92550794F0091E818 /* TodoTextColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C14EE82550794F0091E818 /* TodoTextColorViewController.swift */; };
 		00D98AB2240A475200924423 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D98AB1240A475200924423 /* OptionsViewController.swift */; };
-		00D98AB9240A476C00924423 /* fade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB4240A476C00924423 /* fade@2x.png */; };
 		00D98ABA240A476C00924423 /* glyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB5240A476C00924423 /* glyph@2x.png */; };
 		00D98ABB240A476C00924423 /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB6240A476C00924423 /* shadow@2x.png */; };
 		00D98ABC240A476C00924423 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D98AB7240A476C00924423 /* green@2x.png */; };
@@ -71,7 +70,6 @@
 		00B64F56254E5D4800D091AC /* TodoCellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCellBGView.swift; sourceTree = "<group>"; };
 		00C14EE82550794F0091E818 /* TodoTextColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTextColorViewController.swift; sourceTree = "<group>"; };
 		00D98AB1240A475200924423 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		00D98AB4240A476C00924423 /* fade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fade@2x.png"; sourceTree = "<group>"; };
 		00D98AB5240A476C00924423 /* glyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph@2x.png"; sourceTree = "<group>"; };
 		00D98AB6240A476C00924423 /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
 		00D98AB7240A476C00924423 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		00D98AB3240A476C00924423 /* AltIcons */ = {
 			isa = PBXGroup;
 			children = (
-				00D98AB4240A476C00924423 /* fade@2x.png */,
 				00D98AB5240A476C00924423 /* glyph@2x.png */,
 				00D98AB6240A476C00924423 /* shadow@2x.png */,
 				00D98AB7240A476C00924423 /* green@2x.png */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D98AB9240A476C00924423 /* fade@2x.png in Resources */,
 				00D98ABA240A476C00924423 /* glyph@2x.png in Resources */,
 				00D98ABD240A476C00924423 /* dark@2x.png in Resources */,
 				00D98ABC240A476C00924423 /* green@2x.png in Resources */,

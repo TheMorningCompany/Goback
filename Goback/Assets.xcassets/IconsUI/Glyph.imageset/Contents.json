@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "glyph@2x.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "glyph@2x@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "glyph@2x@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "Suite2021-23.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
