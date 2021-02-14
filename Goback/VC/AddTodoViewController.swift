@@ -30,7 +30,6 @@ class AddTodoViewController: UIViewController {
     
     var TodoTextColor = "Default"
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector:
@@ -60,7 +59,41 @@ class AddTodoViewController: UIViewController {
             self.textView.textColor = UIColor(named: notification.object as! String)
             self.TodoTextColor = notification.object as! String
         }
-
+        
+        //color on open
+        if todo?.color == "Blue"{
+            self.textView.textColor = UIColor(named: "Blue")
+            TodoTextColor = "Blue"
+        }
+        if todo?.color == "Default"{
+            self.textView.textColor = UIColor(named: "Default")
+            TodoTextColor = "Default"
+        }
+        if todo?.color == "DarkBlue"{
+            self.textView.textColor = UIColor(named: "DarkBlue")
+            TodoTextColor = "DarkBlue"
+        }
+        if todo?.color == "Orange"{
+            self.textView.textColor = UIColor(named: "Orange")
+            TodoTextColor = "DarkBlue"
+        }
+        if todo?.color == "Pink"{
+            self.textView.textColor = UIColor(named: "Pink")
+            TodoTextColor = "Pink"
+        }
+        if todo?.color == "Purple"{
+            self.textView.textColor = UIColor(named: "Purple")
+            TodoTextColor = "Purple"
+        }
+        if todo?.color == "Teal"{
+            self.textView.textColor = UIColor(named: "Teal")
+            TodoTextColor = "Teal"
+        }
+        if todo?.color == "Yellow"{
+            self.textView.textColor = UIColor(named: "Yellow")
+            TodoTextColor = "Yellow"
+        }
+        
     }
     
     
