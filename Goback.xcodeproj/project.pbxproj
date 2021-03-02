@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00003D1D25EE28FA005012AD /* CalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00003D1925EE28FA005012AD /* CalHelper.swift */; };
+		00003D1E25EE28FA005012AD /* DateChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00003D1A25EE28FA005012AD /* DateChooser.swift */; };
+		00003D1F25EE28FA005012AD /* AlertDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00003D1B25EE28FA005012AD /* AlertDateViewController.swift */; };
+		00003D2025EE28FA005012AD /* BGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00003D1C25EE28FA005012AD /* BGView.swift */; };
 		000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */; };
 		003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879E12408BD7700A05C43 /* AppDelegate.swift */; };
 		003879E42408BD7700A05C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003879E32408BD7700A05C43 /* SceneDelegate.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00003D1925EE28FA005012AD /* CalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalHelper.swift; sourceTree = "<group>"; };
+		00003D1A25EE28FA005012AD /* DateChooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateChooser.swift; sourceTree = "<group>"; };
+		00003D1B25EE28FA005012AD /* AlertDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDateViewController.swift; sourceTree = "<group>"; };
+		00003D1C25EE28FA005012AD /* BGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGView.swift; sourceTree = "<group>"; };
 		000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconsViewController.swift; sourceTree = "<group>"; };
 		003879DE2408BD7700A05C43 /* Goback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003879E12408BD7700A05C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 				003879F52408CB2E00A05C43 /* VC */,
 				003879E12408BD7700A05C43 /* AppDelegate.swift */,
 				003879E32408BD7700A05C43 /* SceneDelegate.swift */,
+				00003D1B25EE28FA005012AD /* AlertDateViewController.swift */,
+				00003D1C25EE28FA005012AD /* BGView.swift */,
+				00003D1925EE28FA005012AD /* CalHelper.swift */,
+				00003D1A25EE28FA005012AD /* DateChooser.swift */,
 				003879E52408BD7700A05C43 /* ViewController.swift */,
 				003879E72408BD7700A05C43 /* Main.storyboard */,
 				0056050E25520F7100268F5B /* NotificationConstants.swift */,
@@ -260,13 +272,17 @@
 				005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */,
 				005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */,
 				003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */,
+				00003D1D25EE28FA005012AD /* CalHelper.swift in Sources */,
 				006F41CD240A30E30051AA5C /* Todos.xcdatamodeld in Sources */,
 				5D927D3B240F92F500C02C2E /* RSSFeedTableViewCell.swift in Sources */,
 				005FAAA5240CCB350021DFF6 /* NoteTableViewController.swift in Sources */,
 				5D927D3C240F937A00C02C2E /* FeedParser.swift in Sources */,
 				0056050F25520F7100268F5B /* NotificationConstants.swift in Sources */,
+				00003D1E25EE28FA005012AD /* DateChooser.swift in Sources */,
+				00003D1F25EE28FA005012AD /* AlertDateViewController.swift in Sources */,
 				003879F92408CB5300A05C43 /* TodoTableViewController.swift in Sources */,
 				003879E62408BD7700A05C43 /* ViewController.swift in Sources */,
+				00003D2025EE28FA005012AD /* BGView.swift in Sources */,
 				003879E22408BD7700A05C43 /* AppDelegate.swift in Sources */,
 				005FAAA8240CD2E90021DFF6 /* Notes.xcdatamodeld in Sources */,
 				003879E42408BD7700A05C43 /* SceneDelegate.swift in Sources */,

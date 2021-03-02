@@ -20,6 +20,7 @@ class AddTodoViewController: UIViewController {
     //MARK: Outlets
     
     @IBOutlet weak var colorBtn: UIButton!
+    @IBOutlet weak var dateBtn: UIButton!
     @IBOutlet weak var textViewBG: UIView!
     @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
@@ -50,6 +51,8 @@ class AddTodoViewController: UIViewController {
         self.saveBtn.layer.cornerCurve = .continuous
         self.colorBtn.layer.cornerRadius = 20.0
         self.colorBtn.layer.cornerCurve = .continuous
+        self.dateBtn.layer.cornerRadius = 20.0
+        self.dateBtn.layer.cornerCurve = .continuous
         
         isModalInPresentation = true
         

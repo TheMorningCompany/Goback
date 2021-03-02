@@ -8,33 +8,33 @@
 
 import UIKit
 
-class RSSFeedTableViewCell: UITableViewCell {
+enum CellState {
+    case expanded
+    case collapsed
+}
 
-    @IBOutlet weak var titleLabel: UILabel!
+class NewsTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var bgView: UIView!
+    
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            descriptionLabel.numberOfLines = 1
+        }
+    }
     @IBOutlet weak var descriptionLabel: UILabel! {
         didSet {
-            descriptionLabel.numberOfLines = 3
+            descriptionLabel.numberOfLines = 2
         }
     }
-    @IBOutlet weak var pubDateLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var dateLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     var item: RSSItem! {
         didSet {
-            //set title, desc, pubDate label texts
             titleLabel.text = item.title
             descriptionLabel.text = item.description
-            pubDateLabel.text = item.pubDate
+            dateLabel.text = item.pubDate
         }
     }
-
+    
 }
