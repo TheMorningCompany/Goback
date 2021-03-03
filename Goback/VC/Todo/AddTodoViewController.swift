@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AVKit
 
 class AddTodoViewController: UIViewController {
 
@@ -16,6 +17,10 @@ class AddTodoViewController: UIViewController {
     
     var managedContext: NSManagedObjectContext!
     var todo: Todo?
+    
+    var alertDate: Date!
+    
+    
     
     //MARK: Outlets
     
@@ -30,6 +35,11 @@ class AddTodoViewController: UIViewController {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     var TodoTextColor = "Default"
+    
+    
+    let notificationManager = LocalNotificationManager()
+    var backgroundTask: UIBackgroundTaskIdentifier = .invalid
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,9 +68,14 @@ class AddTodoViewController: UIViewController {
         
         //Notification for when the color picker closes
         NotificationCenter.default.addObserver(forName: COLOR_NOTIFICATION, object: nil, queue: nil) { notification in
-            print("color received")
             self.textView.textColor = UIColor(named: notification.object as! String)
             self.TodoTextColor = notification.object as! String
+        }
+        
+        //when the date picker closes
+        NotificationCenter.default.addObserver(forName: DAYCHANGE_NOTIFICATION, object: nil, queue: nil) { notification in
+            self.alertDate = notification.object as? Date
+            print(self.alertDate!)
         }
         
         //color on open
@@ -140,6 +155,27 @@ class AddTodoViewController: UIViewController {
             print("error saving todo\(error)")
         }
         
+        todo?.alertDate = alertDate
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey:
+                    "item done", arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "your item has finished", arguments: nil)
+        content.categoryIdentifier = "Your notification category"
+        content.sound = UNNotificationSound.default
+        content.badge = 1
+        
+        let dateComponents = Calendar.current.dateComponents(Set(arrayLiteral: Calendar.Component.year, Calendar.Component.month, Calendar.Component.day), from: alertDate)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let request = UNNotificationRequest(identifier: "Your notification identifier", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+                if let error = error {
+                    print(error)
+                } else {
+                   print("succeed")
+                }
+            }
+        )
     }
 
     @IBAction func dismissKeyboard(_ sender: Any) {

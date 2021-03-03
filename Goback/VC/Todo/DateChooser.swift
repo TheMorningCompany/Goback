@@ -83,6 +83,9 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
         }
         print(hour)
         
+        dayLabel.text = CalHelper().dayString(date: selectedDate)
+        monthLabel.text = CalHelper().monthString(date: selectedDate).lowercased()
+            + " " + CalHelper().yearString(date: selectedDate).lowercased()
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -103,7 +106,7 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
             mins = Int(fieldh.text!)!
             minsCountdown = mins * 60
             
-            secs = Int(fieldm.text!)!
+            secs = Int(fieldm.text!) ?? 00
             totalCountdown = mins + minsCountdown
             
             fieldh.resignFirstResponder()
@@ -244,6 +247,7 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
     func setMonthLabel() {
         monthLabel.text = CalHelper().monthString(date: selectedDate).lowercased()
             + " " + CalHelper().yearString(date: selectedDate).lowercased()
+        
     }
     
     @IBAction func prevMonth(_ sender: Any) {
@@ -261,6 +265,7 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
     
     func setDayLabel() {
         dayLabel.text = CalHelper().dayString(date: selectedDate)
+        
     }
     
     
@@ -274,6 +279,8 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
                 self.dayLabel.transform = CGAffineTransform.identity
         })
         }
+        
+        
     }
     func dayForward() {
         UIView.animate(withDuration: 0.25, animations: {
@@ -295,6 +302,18 @@ class DateChooser: UITableViewController, UITextFieldDelegate {
         selectedDate = CalHelper().plusDay(date: selectedDate)
         dayForward()
         
+    }
+    @IBAction func doneWithoutAlert(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
+        NotificationCenter.default.post(name: DAYCHANGE_NOTIFICATION, object: self.selectedDate)
+    }
+    @IBAction func doneAndGoToAlerts(_ sender: Any) {
+       
+        NotificationCenter.default.post(name: DAYCHANGE_NOTIFICATION, object: self.selectedDate)
+    }
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     

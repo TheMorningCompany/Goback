@@ -28,6 +28,8 @@
 		005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */; };
 		006F41CD240A30E30051AA5C /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CB240A30E30051AA5C /* Todos.xcdatamodeld */; };
 		006F41CF240A31B80051AA5C /* CoreDataStackTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */; };
+		008639DC25EF10940003C402 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008639DB25EF10940003C402 /* CloudKit.framework */; };
+		008639E125EF14320003C402 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008639E025EF14320003C402 /* LocalNotificationManager.swift */; };
 		008D0C422554692200C68A11 /* RSSSubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */; };
 		0095B8E425507D9B00A542C9 /* TextColorBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095B8E325507D9B00A542C9 /* TextColorBtn.swift */; };
 		009788C7254FE14E008C9FD7 /* GradientTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */; };
@@ -70,6 +72,8 @@
 		005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackNotes.swift; sourceTree = "<group>"; };
 		006F41CC240A30E30051AA5C /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
 		006F41CE240A31B80051AA5C /* CoreDataStackTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTodo.swift; sourceTree = "<group>"; };
+		008639DB25EF10940003C402 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		008639E025EF14320003C402 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSSubscribeViewController.swift; sourceTree = "<group>"; };
 		0095B8E325507D9B00A542C9 /* TextColorBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColorBtn.swift; sourceTree = "<group>"; };
 		009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTitleViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008639DC25EF10940003C402 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +108,7 @@
 			children = (
 				003879E02408BD7700A05C43 /* Goback */,
 				003879DF2408BD7700A05C43 /* Products */,
+				008639DA25EF10940003C402 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,23 +129,15 @@
 				003879F52408CB2E00A05C43 /* VC */,
 				003879E12408BD7700A05C43 /* AppDelegate.swift */,
 				003879E32408BD7700A05C43 /* SceneDelegate.swift */,
-				00003D1B25EE28FA005012AD /* AlertDateViewController.swift */,
 				00003D1C25EE28FA005012AD /* BGView.swift */,
-				00003D1925EE28FA005012AD /* CalHelper.swift */,
-				00003D1A25EE28FA005012AD /* DateChooser.swift */,
+				00B64F56254E5D4800D091AC /* TodoCellBGView.swift */,
 				003879E52408BD7700A05C43 /* ViewController.swift */,
 				003879E72408BD7700A05C43 /* Main.storyboard */,
 				0056050E25520F7100268F5B /* NotificationConstants.swift */,
-				0095B8E325507D9B00A542C9 /* TextColorBtn.swift */,
-				00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */,
-				00B64F56254E5D4800D091AC /* TodoCellBGView.swift */,
-				5D927D36240F873100C02C2E /* RSSTableViewController.swift */,
-				5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */,
-				5D927D38240F87B100C02C2E /* FeedParser.swift */,
 				00D98AB1240A475200924423 /* OptionsViewController.swift */,
 				000D802C2427F7E4005E0CA1 /* AppIconsViewController.swift */,
-				003879EA2408BD7800A05C43 /* Assets.xcassets */,
 				005CC7E3254E9EF6006DCAE9 /* PrimaryBtn.swift */,
+				003879EA2408BD7800A05C43 /* Assets.xcassets */,
 				003879EC2408BD7800A05C43 /* LaunchScreen.storyboard */,
 				003879EF2408BD7800A05C43 /* Info.plist */,
 			);
@@ -149,14 +147,11 @@
 		003879F52408CB2E00A05C43 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				003879F62408CB3F00A05C43 /* AddTodoViewController.swift */,
+				008639DE25EF13FF0003C402 /* RSS */,
+				008639DD25EF13DE0003C402 /* Todo */,
 				00A5607E254FCDAB0009AB28 /* GradientTitleBar.swift */,
 				009788C6254FE14E008C9FD7 /* GradientTitleViewController.swift */,
-				00C14EE82550794F0091E818 /* TodoTextColorViewController.swift */,
-				003879F82408CB5300A05C43 /* TodoTableViewController.swift */,
-				008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */,
-				005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */,
-				005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */,
+				008639DF25EF14120003C402 /* Notes */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -170,6 +165,50 @@
 				005FAAA9240CD3B50021DFF6 /* CoreDataStackNotes.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		008639DA25EF10940003C402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				008639DB25EF10940003C402 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		008639DD25EF13DE0003C402 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				008639E025EF14320003C402 /* LocalNotificationManager.swift */,
+				003879F62408CB3F00A05C43 /* AddTodoViewController.swift */,
+				00C14EE82550794F0091E818 /* TodoTextColorViewController.swift */,
+				00003D1925EE28FA005012AD /* CalHelper.swift */,
+				0095B8E325507D9B00A542C9 /* TextColorBtn.swift */,
+				00003D1B25EE28FA005012AD /* AlertDateViewController.swift */,
+				00B45D0C254FA5D100813EB6 /* ColorCellChooserView.swift */,
+				00003D1A25EE28FA005012AD /* DateChooser.swift */,
+				003879F82408CB5300A05C43 /* TodoTableViewController.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		008639DE25EF13FF0003C402 /* RSS */ = {
+			isa = PBXGroup;
+			children = (
+				008D0C412554692200C68A11 /* RSSSubscribeViewController.swift */,
+				5D927D36240F873100C02C2E /* RSSTableViewController.swift */,
+				5D927D3A240F92F500C02C2E /* RSSFeedTableViewCell.swift */,
+				5D927D38240F87B100C02C2E /* FeedParser.swift */,
+			);
+			path = RSS;
+			sourceTree = "<group>";
+		};
+		008639DF25EF14120003C402 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				005FAAA2240CCB220021DFF6 /* AddNoteViewController.swift */,
+				005FAAA4240CCB350021DFF6 /* NoteTableViewController.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		00D98AB3240A476C00924423 /* AltIcons */ = {
@@ -270,6 +309,7 @@
 				00A5607F254FCDAB0009AB28 /* GradientTitleBar.swift in Sources */,
 				000D802D2427F7E4005E0CA1 /* AppIconsViewController.swift in Sources */,
 				005FAAA3240CCB220021DFF6 /* AddNoteViewController.swift in Sources */,
+				008639E125EF14320003C402 /* LocalNotificationManager.swift in Sources */,
 				005FAAAA240CD3B50021DFF6 /* CoreDataStackNotes.swift in Sources */,
 				003879F72408CB3F00A05C43 /* AddTodoViewController.swift in Sources */,
 				00003D1D25EE28FA005012AD /* CalHelper.swift in Sources */,

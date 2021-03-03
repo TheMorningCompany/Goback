@@ -28,6 +28,8 @@ class AlertDateViewController: UITableViewController {
     var atTime = true
     var dayOf = false
     
+    var selectedDate = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -153,6 +155,11 @@ class AlertDateViewController: UITableViewController {
             
         }
         
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: DAYCHANGE_NOTIFICATION, object: self.selectedDate)
     }
     
     
